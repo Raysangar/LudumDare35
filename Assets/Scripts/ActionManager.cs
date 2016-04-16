@@ -45,6 +45,7 @@ public class ActionManager : MonoBehaviour {
 				if(ActionList.Actions[index].IsPlayable){
 					OnActionPlayable(ActionList.Actions[index].UIActionList);
 				}
+				Debug.Log(ActionList.Actions[index].TypeOfAction.ToString());
 				switch (ActionList.Actions[index].TypeOfAction){
 				case ActionType.Move:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;

@@ -354,6 +354,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 39f1b0d636b7941c583405de4e4c50cd, type: 2}
+    - target: {fileID: 13700000, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 453d83c93dde642178c8b3e6e8807109, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
   m_IsPrefabParent: 0
@@ -649,7 +653,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.621446
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_LocalRotation.z
@@ -657,7 +661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.78345704
+      value: 0.7071067
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_RootOrder
@@ -697,7 +701,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_RootOrder
@@ -705,8 +709,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c5f42887910e42719f7ef16bdc544d9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f49ab9f3513b48ed8ead9e970546c16, type: 3}
   m_IsPrefabParent: 0
@@ -1639,7 +1647,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 987720630}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2210,6 +2218,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActionList: {fileID: 11400000, guid: 99986eb4ab64a4b0eb49f4b2d82a5c38, type: 2}
+  CurrentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
 --- !u!1001 &1548601654
 Prefab:
   m_ObjectHideFlags: 0
@@ -3203,7 +3223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeWindowDisplayed: 10
-  eventWidthPerSecond: 40
   eventPrefabs:
   - {fileID: 22422532, guid: 9f0c48095897f41abaa6ca1f54443c88, type: 2}
   - {fileID: 22462016, guid: b94ae525279eb4db7ab1e88a90f4b9a7, type: 2}

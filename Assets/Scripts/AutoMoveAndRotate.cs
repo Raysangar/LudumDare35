@@ -31,19 +31,15 @@ namespace UnityStandardAssets.Utility
 					m_LastRealTime = Time.realtimeSinceStartup;
 				}
 				transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
-				transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
+				if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Rotate){
+					transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
+				}
 			}
 			if(stopPosition != null){
 				if(Vector3.Distance(transform.position, stopPosition.position) < 0.1 && ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Move){
 					moveUnitsPerSecond.value = Vector3.zero;
 					isMoving = false;
 				}	
-			}
-			if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Rotate){
-				if(transform.rotation.eulerAngles.y > ActionManager.Instance.CurrentAction.RotationDegrees.y){
-					rotateDegreesPerSecond.value = Vector3.zero;
-					isMoving = false;
-				}
 			}
         }
 

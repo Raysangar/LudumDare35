@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class InputController : MonoBehaviour {
 
   private LifeController lifeController;
+  private SoundManager soundManager;
 
   private Dictionary<string, UI.EventManager.ActionType> actionsDictionary = new Dictionary<string, UI.EventManager.ActionType>() {
     { "Characters/Pig1", UI.EventManager.ActionType.Pig1 },
@@ -15,21 +16,17 @@ public class InputController : MonoBehaviour {
 
   void Start () {
     lifeController = LifeController.Instance;
+    soundManager = SoundManager.Instance;
   }
 
   public void OnActionClicked (string buttonName) {
-    if (checkAction(buttonName))
+    if (checkAction(buttonName)) {
       lifeController.OnEventSuccess();
-    else
+      soundManager.PlayApplause();
+    } else {
       lifeController.OnEventFailed();
-  }
-
-  private void activateIconOfButton (string buttonName) {
-    transform.Find(buttonName + "/Image").GetComponent<Image>().enabled = true;
-  }
-
-  private bool isActionRevealed (string buttonName) {
-    return transform.Find(buttonName + "/Image").GetComponent<Image>().enabled;
+      soundManager.PlayBoo();
+    }
   }
 
   public bool checkAction (string actionName) {

@@ -8,5 +8,9 @@ namespace UI {
     [SerializeField]
     private List<Action> actionList;
 
+		public List<Action> Sequence {
+			get { return actionList; }
+		}
+
   }
 }

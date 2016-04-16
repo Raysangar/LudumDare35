@@ -31,12 +31,15 @@ namespace UI {
     void Start () {
       eventParent = transform.FindChild("EventSlider").GetComponent<Transform>();
       events = new List<Event>();
-<<<<<<< HEAD
-			AddEvent(new List<Action>(){new Action(1, 0, ActionType.Pig1)}, ActionType.Pig1);
-=======
-      AddEvent(new List<Action>(){new Action(1, 0, ActionType.Pig1)});
->>>>>>> 606965bdc111e1b54839ad5f32b1461f90631572
     }
+
+	void OnEnable(){
+		ActionManager.OnActionPlayable += AddEvent;
+	}
+
+	void OnDisable(){
+		ActionManager.OnActionPlayable -= AddEvent;
+	}
 
     void Update () {
       foreach (Event graphicEvent in events) {
@@ -45,10 +48,10 @@ namespace UI {
       }
     }
 
-    public void AddEvent (List<Action> actions) {
-      for (int i = 0; i < actions.Count; ++i) {
-        float initPosition = Screen.width/2 + eventPrefabs[0].rect.width/2 + actions[i].offset;
-        Event actionEvent = new Event(eventPrefabs[(int)actions[i].actionType], eventParent, initPosition, actions[0].width, actions[i].actionType);
+	public void AddEvent (ActionList actions) {
+		for (int i = 0; i < actions.Sequence.Count; ++i) {
+			float initPosition = Screen.width/2 + eventPrefabs[0].rect.width/2 + actions.Sequence[i].offset;
+			Event actionEvent = new Event(eventPrefabs[(int)actions.Sequence[i].actionType], eventParent, initPosition, actions.Sequence[0].width, actions.Sequence[i].actionType);
         actionEvent.DestroyController.OnOutsideOfCamera += OnEventDestroyed;
         events.Add(actionEvent);
       }

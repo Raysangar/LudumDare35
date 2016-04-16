@@ -11,6 +11,9 @@ public class ActionManager : MonoBehaviour {
 	private GameObject pig3;
 	private GameObject wolf;
 
+	public delegate void OnActionPlayableHanlder(UI.ActionList actionList);
+	public static OnActionPlayableHanlder OnActionPlayable;
+
 	void Awake(){
 		if(Instance == null){
 			Instance = this;
@@ -36,6 +39,9 @@ public class ActionManager : MonoBehaviour {
 		if(index < ActionList.Actions.Count){
 			if(ActionList.Actions[index].Actor != null)
 			{
+				if(ActionList.Actions[index].IsPlayable){
+					OnActionPlayable(ActionList.Actions[index].UIActionList);
+				}
 				switch (ActionList.Actions[index].TypeOfAction){
 				case ActionType.Move:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;

@@ -9,9 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f44582fabcbe840098831358065e273a, type: 3}
-  m_Name: InteractableActionSequence
+  m_Name: InteractableActionSequence01
   m_EditorClassIdentifier: 
   actionList:
-  - width: 0
+  - width: 1
+    offset: 0
+    actionType: 0
+  - width: 2
+    offset: 60
+    actionType: 1
+  - width: 2
+    offset: 180
+    actionType: 2
+  - width: 2
     offset: 0
     actionType: 0

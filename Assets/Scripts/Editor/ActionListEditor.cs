@@ -121,7 +121,7 @@ public class ActionListEditor : EditorWindow {
 				GUILayout.BeginHorizontal ();
 				inventoryItemList.Actions[viewIndex-1].IsPlayable = (bool)EditorGUILayout.Toggle("Is Playable", inventoryItemList.Actions[viewIndex-1].IsPlayable, GUILayout.ExpandWidth(false));
 				if(inventoryItemList.Actions[viewIndex-1].IsPlayable){
-//					inventoryItemList.Actions[viewIndex-1].UIActions;
+					inventoryItemList.Actions[viewIndex-1].UIActionList = EditorGUILayout.ObjectField ("Interface Action Sequence", inventoryItemList.Actions[viewIndex-1].UIActionList, typeof (UI.ActionList), false) as UI.ActionList;
 				}
 				GUILayout.EndHorizontal ();
 

@@ -15,7 +15,7 @@ public class Action {
 	public AnimationType TypeOfAnimation;
 	public ActionType TypeOfAction;
 	public SoundType TypeOfSound;
-	public List<UI.Action> UIActions;
+	public UI.ActionList UIActionList;
 }
 
 public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound }

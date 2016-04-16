@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &161516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440484}
+  - 114: {fileID: 11428894}
+  m_Layer: 0
+  m_Name: Director
+  m_TagString: Director
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440484
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11428894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffcd5d957dcee405ebe710ede0455608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Act01Track: {fileID: 8300000, guid: 57e41f703811f48459bc692bf690661c, type: 3}
+  Act02Track: {fileID: 8300000, guid: 8e1cf749f463a433b980920bd736dfd7, type: 3}
+  Act03Track: {fileID: 8300000, guid: 4df778875aa7944f4ba1a6b9045945c5, type: 3}
+  Boo00: {fileID: 0}
+  Boo01: {fileID: 0}
+  Clap00: {fileID: 0}
+  Clap01: {fileID: 0}
+  House: {fileID: 0}
+  PigLaugh: {fileID: 0}
+  PigYell: {fileID: 0}
+  SmokeBomb: {fileID: 0}
+  WolfScare: {fileID: 8300000, guid: f1f18ce0b29da43858a531d8e59f57f8, type: 3}
+  WolfBlow: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 161516}
+  m_IsPrefabParent: 1

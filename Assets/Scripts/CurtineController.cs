@@ -3,11 +3,7 @@ using System.Collections;
 
 public class CurtineController : MonoBehaviour {
 
-	private Animator anim;
-
-	void Awake(){
-		anim = GetComponent<Animator>();
-	}
+	public Animator anim;
 
 	[ContextMenu("Open Curtine")]
 	public void OpenCurtine(){

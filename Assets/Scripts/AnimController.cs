@@ -5,7 +5,6 @@ public class AnimController : MonoBehaviour {
 
 	private Animator animator;
 
-
 	void Awake(){
 		animator = GetComponent<Animator>();
 	}

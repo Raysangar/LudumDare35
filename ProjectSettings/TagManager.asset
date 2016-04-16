@@ -9,6 +9,7 @@ TagManager:
   - Pig3
   - Wolf
   - Director
+  - Constructor
   layers:
   - Default
   - TransparentFX

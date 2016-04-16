@@ -11,6 +11,7 @@ public class ActionManager : MonoBehaviour {
 	private GameObject pig3;
 	private GameObject wolf;
 	private GameObject director;
+	private GameObject constructor;
 
 	public Action CurrentAction = null;
 
@@ -33,6 +34,7 @@ public class ActionManager : MonoBehaviour {
 		pig3 = GameObject.FindGameObjectWithTag("Pig3");
 		wolf = GameObject.FindGameObjectWithTag("Wolf");
 		director = GameObject.FindGameObjectWithTag("Director");
+		constructor = GameObject.FindGameObjectWithTag("Constructor");
 	}
 
 	void OnEnable(){
@@ -74,6 +76,16 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.PlaySound:
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<SoundController>().PlayTransitionTo(ActionList.Actions[index].TypeOfSound);
 					break;
+				case ActionType.Build:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().ConstructHouseByType(ActionList.Actions[index].TypeOfBuild);
+					break;
+				case ActionType.Curtine:
+					if(ActionList.Actions[index].ActionsOfCurtine == CurtineActions.Close){
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().OpenCurtine();
+					} else {
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().CloseCurtine();
+					}
+					break;
 				default:
 					break;
 				}
@@ -94,6 +106,8 @@ public class ActionManager : MonoBehaviour {
 			return wolf;
 		case ActorType.Director:
 			return director;
+		case ActorType.Constructor:
+			return constructor;
 		}
 		return null;
 	}

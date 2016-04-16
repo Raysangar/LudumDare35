@@ -120,6 +120,13 @@ public class ActionListEditor : EditorWindow {
 				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Rotate){
 					inventoryItemList.Actions[viewIndex-1].RotationDegrees = EditorGUILayout.Vector3Field ("Rotation Degrees", inventoryItemList.Actions[viewIndex-1].RotationDegrees, GUILayout.ExpandWidth(false));
 				}
+
+				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Build){
+					inventoryItemList.Actions[viewIndex-1].TypeOfBuild = (BuildType) EditorGUILayout.EnumPopup ("Type of Build", inventoryItemList.Actions[viewIndex-1].TypeOfBuild, GUILayout.ExpandWidth(false));
+				}
+				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Curtine){
+					inventoryItemList.Actions[viewIndex-1].ActionsOfCurtine = (CurtineActions) EditorGUILayout.EnumPopup ("Action of the Curtine", inventoryItemList.Actions[viewIndex-1].ActionsOfCurtine, GUILayout.ExpandWidth(false));
+				}
 				GUILayout.Space(10);
 
 				GUILayout.BeginHorizontal ();

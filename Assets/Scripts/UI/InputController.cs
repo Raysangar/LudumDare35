@@ -6,6 +6,7 @@ public class InputController : MonoBehaviour {
 
   private LifeController lifeController;
   private SoundManager soundManager;
+  private bool gameStarted = false;
 
   private Dictionary<string, UI.ActionType> actionsDictionary = new Dictionary<string, UI.ActionType>() {
     { "Characters/Pig1", UI.ActionType.Pig1 },
@@ -24,12 +25,19 @@ public class InputController : MonoBehaviour {
   void Start () {
     lifeController = LifeController.Instance;
     soundManager = SoundManager.Instance;
+    GameManager.Instance.OnGameStart += OnGameStart;
+  }
+
+  public void OnGameStart () {
+    gameStarted = true;
   }
 
   void Update () {
-    foreach (KeyCode key in actionsKeyboardDictionary.Keys) {
-      if (Input.GetKeyDown(key)) {
-        onActionTriggered( actionsKeyboardDictionary[key]);
+    if (gameStarted) {
+      foreach (KeyCode key in actionsKeyboardDictionary.Keys) {
+        if (Input.GetKeyDown(key)) {
+          onActionTriggered( actionsKeyboardDictionary[key]);
+        }
       }
     }
   }

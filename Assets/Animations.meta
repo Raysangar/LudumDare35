@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations.meta
 guid: 5291bcb3e3bce44fd8951928c8e569b7
 folderAsset: yes
 timeCreated: 1460795820
 licenseType: Free
+=======
+guid: 2f93b1924543b4d7baa16a7a8ed4aa5a
+folderAsset: yes
+timeCreated: 1460784511
+licenseType: Pro
+>>>>>>> 79fbee841b81b7f992c69ac559b469483c5654d0:Assets/Graphics.meta
 DefaultImporter:
   userData: 
   assetBundleName: 

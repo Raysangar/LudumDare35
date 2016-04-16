@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs.meta
+guid: e21e75499ed244e4c9920c954f66769b
+folderAsset: yes
+timeCreated: 1460796428
+licenseType: Free
+=======
+guid: 6a2393ba4b3d141c68876293dc22aca6
+folderAsset: yes
+timeCreated: 1460792996
+licenseType: Pro
+>>>>>>> 79fbee841b81b7f992c69ac559b469483c5654d0:Assets/Scripts/UI.meta
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials.meta
 guid: 9c946f3060a344d7590104f73379f953
 folderAsset: yes
 timeCreated: 1460796992
 licenseType: Free
+=======
+guid: 9586c29d94ab040bfac13428b95f0e7d
+folderAsset: yes
+timeCreated: 1460784504
+licenseType: Pro
+>>>>>>> 79fbee841b81b7f992c69ac559b469483c5654d0:Assets/UI.meta
 DefaultImporter:
   userData: 
   assetBundleName: 

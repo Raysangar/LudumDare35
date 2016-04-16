@@ -22,4 +22,4 @@ public class Action {
 public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound, ChangeCostume, Rotate }
 public enum ActorType { Wolf, Pig1, Pig2, Pig3 }
 public enum AnimationType {Walk, Run, Afraid, Death, Idle, Blow}
-public enum SoundType {Laugh}
+public enum SoundType {Laugh, SmokeBomb, Clap00, Clap01, Boo00, Boo01, Act01Track, Act02Track, Act03Track, WolfScare, PigYell, PigLaugh, House}

@@ -5,31 +5,28 @@ using System.Collections.Generic;
 public class InputController : MonoBehaviour {
 
   private LifeController lifeController;
+  private SoundManager soundManager;
 
-  private Dictionary<string, UI.EventManager.ActionType> actionsDictionary = new Dictionary<string, UI.EventManager.ActionType>() {
-    { "Characters/Pig1", UI.EventManager.ActionType.Pig1 },
-    { "Characters/Pig2", UI.EventManager.ActionType.Pig2 },
-    { "Characters/Pig3", UI.EventManager.ActionType.Pig3 },
-    { "Characters/Wolf", UI.EventManager.ActionType.Wolf },
+  private Dictionary<string, UI.ActionType> actionsDictionary = new Dictionary<string, UI.ActionType>() {
+    { "Characters/Pig1", UI.ActionType.Pig1 },
+    { "Characters/Pig2", UI.ActionType.Pig2 },
+    { "Characters/Pig3", UI.ActionType.Pig3 },
+    { "Characters/Wolf", UI.ActionType.Wolf },
   };
 
   void Start () {
     lifeController = LifeController.Instance;
+    soundManager = SoundManager.Instance;
   }
 
   public void OnActionClicked (string buttonName) {
-    if (checkAction(buttonName))
+    if (checkAction(buttonName)) {
       lifeController.OnEventSuccess();
-    else
+      soundManager.PlayApplause();
+    } else {
       lifeController.OnEventFailed();
-  }
-
-  private void activateIconOfButton (string buttonName) {
-    transform.Find(buttonName + "/Image").GetComponent<Image>().enabled = true;
-  }
-
-  private bool isActionRevealed (string buttonName) {
-    return transform.Find(buttonName + "/Image").GetComponent<Image>().enabled;
+      soundManager.PlayBoo();
+    }
   }
 
   public bool checkAction (string actionName) {

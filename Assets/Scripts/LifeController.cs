@@ -34,6 +34,14 @@ public class LifeController : MonoBehaviour {
     get { return instance; }
   }
 
+  public int MaxLife {
+    get { return maxLife; }
+  }
+
+  public int CurrentLife {
+    get { return currentLife; }
+  }
+
   public void OnEventSuccess () {
     Debug.Log("Success");
     currentLife = (currentLife + eventSuccessReward) % maxLife;

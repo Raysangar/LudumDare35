@@ -14,23 +14,36 @@ public class InputController : MonoBehaviour {
     { "Characters/Wolf", UI.ActionType.Wolf },
   };
 
+  private Dictionary<KeyCode, UI.ActionType> actionsKeyboardDictionary = new Dictionary<KeyCode, UI.ActionType>() {
+    { KeyCode.Q, UI.ActionType.Pig1 },
+    { KeyCode.W, UI.ActionType.Pig2 },
+    { KeyCode.E, UI.ActionType.Pig3 },
+    { KeyCode.R, UI.ActionType.Wolf },
+  };
+
   void Start () {
     lifeController = LifeController.Instance;
     soundManager = SoundManager.Instance;
   }
 
+  void Update () {
+    foreach (KeyCode key in actionsKeyboardDictionary.Keys) {
+      if (Input.GetKeyDown(key)) {
+        onActionTriggered( actionsKeyboardDictionary[key]);
+      }
+    }
+  }
+
   public void OnActionClicked (string buttonName) {
-    if (checkAction(buttonName)) {
+    onActionTriggered(actionsDictionary[buttonName]);
+  }
+
+  private void onActionTriggered (UI.ActionType actionType) {
+    if (UI.EventManager.Instance.CheckEventMatches(actionType)) {
       lifeController.OnEventSuccess();
-      soundManager.PlayApplause();
     } else {
       lifeController.OnEventFailed();
       soundManager.PlayBoo();
     }
   }
-
-  public bool checkAction (string actionName) {
-    return UI.EventManager.Instance.CheckEventMatches(actionsDictionary[actionName]);
-  }
-
 }

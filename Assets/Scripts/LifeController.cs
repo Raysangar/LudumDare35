@@ -27,7 +27,7 @@ public class LifeController : MonoBehaviour {
 
   void Awake () {
     instance = this;
-    currentLife = maxLife;
+    currentLife = maxLife/2;
   }
 
   public static LifeController Instance {

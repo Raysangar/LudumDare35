@@ -16,6 +16,7 @@ public class SoundController : MonoBehaviour {
 	public AudioClip PigYell;
 	public AudioClip SmokeBomb;
 	public AudioClip WolfScare;
+	public AudioClip WolfBlow;
 
 	private AudioSource sourceMusic;
 
@@ -105,6 +106,10 @@ public class SoundController : MonoBehaviour {
 			case SoundType.WolfScare:
 
 				Play(WolfScare);
+				break;
+			case SoundType.WolfBlow:
+
+				Play(WolfBlow);
 				break;
 		}
 	}

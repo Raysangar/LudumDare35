@@ -8,6 +8,7 @@ TagManager:
   - Pig2
   - Pig3
   - Wolf
+  - Director
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class Action {
 	public Transform EffectPosition;
 	public Transform EndPosition;
 	public bool IsPlayable;
+	public Vector3 RotationDegrees;
 
 	public AnimationType TypeOfAnimation;
 	public ActionType TypeOfAction;
@@ -18,7 +19,7 @@ public class Action {
 	public UI.ActionList UIActionList;
 }
 
-public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound }
+public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound, ChangeCostume, Rotate }
 public enum ActorType { Wolf, Pig1, Pig2, Pig3 }
 public enum AnimationType {Walk, Run, Afraid, Death, Idle, Blow}
 public enum SoundType {Laugh}

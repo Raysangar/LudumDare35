@@ -18,16 +18,40 @@ MonoBehaviour:
     EffectPosition: {fileID: 472924, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     EndPosition: {fileID: 435452, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     IsPlayable: 1
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
     UIActionList: {fileID: 11400000, guid: 062f3b64ee8444791a7954957f69da27, type: 2}
+  - Name: Action 2
+    ExecuteTime: 7
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 90, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 5
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+  - Name: Action 2
+    ExecuteTime: 7.4
+    Actor: 1
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 4
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
   - Name: 
     ExecuteTime: 7.5
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
     IsPlayable: 1
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 3
     TypeOfAction: 1
     TypeOfSound: 0
@@ -38,6 +62,7 @@ MonoBehaviour:
     EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
@@ -48,6 +73,7 @@ MonoBehaviour:
     EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 3
     TypeOfAction: 3
     TypeOfSound: 0
@@ -58,6 +84,7 @@ MonoBehaviour:
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
     IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0

@@ -11,6 +11,8 @@ public class ActionManager : MonoBehaviour {
 	private GameObject pig3;
 	private GameObject wolf;
 
+	public Action CurrentAction = null;
+
 	public delegate void OnActionPlayableHanlder(UI.ActionList actionList);
 	public static OnActionPlayableHanlder OnActionPlayable;
 
@@ -37,6 +39,7 @@ public class ActionManager : MonoBehaviour {
 
 	void OnActionLaunchedCallback(int index){
 		if(index < ActionList.Actions.Count){
+			CurrentAction = ActionList.Actions[index];
 			if(ActionList.Actions[index].Actor != null)
 			{
 				if(ActionList.Actions[index].IsPlayable){
@@ -46,6 +49,14 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.Move:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().stopPosition = ActionList.Actions[index].EndPosition;
+					break;
+				case ActionType.Rotate:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = true;
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().rotateDegreesPerSecond.value = ActionList.Actions[index].RotationDegrees;
+					break;
+				case ActionType.ChangeCostume:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CostumeController>().ActivateCostume();
 					break;
 				case ActionType.PlayAnimation:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AnimController>().PlayTransitionTo(ActionList.Actions[index].TypeOfAnimation);

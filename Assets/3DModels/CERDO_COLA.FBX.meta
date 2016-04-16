@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 386ed2bb2cbb4409b894bfe92fff5c0f
-timeCreated: 1460799054
+guid: 6dfb424d124c248b8b0872eefdb141f1
+timeCreated: 1460823830
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Plane001
+    4300000: CERDO_COLA
     9500000: //RootNode
   materials:
     importMaterials: 1

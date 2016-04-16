@@ -12,20 +12,8 @@ MonoBehaviour:
   m_Name: ActionList
   m_EditorClassIdentifier: 
   Actions:
-  - Name: 
-    ExecuteTime: 1
-    Actor: 1
-    EffectPosition: {fileID: 472924, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    EndPosition: {fileID: 435452, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    IsPlayable: 1
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 0
-    TypeOfAction: 0
-    TypeOfSound: 0
-    UIActionList: {fileID: 11400000, guid: 062f3b64ee8444791a7954957f69da27, type: 2}
-    TypeOfBuild: 0
-  - Name: Action 2
-    ExecuteTime: 0
+  - Name: Test
+    ExecuteTime: 0.2
     Actor: 4
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
@@ -36,55 +24,21 @@ MonoBehaviour:
     TypeOfSound: 6
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Action 2
-    ExecuteTime: 7.5
+    ExecuteTime: 2
     Actor: 1
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
+    EffectPosition: {fileID: 472924, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    EndPosition: {fileID: 435452, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
     IsPlayable: 0
-    RotationDegrees: {x: 0, y: 50, z: 0}
+    RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
-    TypeOfAction: 5
+    TypeOfAction: 0
     TypeOfSound: 0
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Action 3
-    ExecuteTime: 9
-    Actor: 1
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
-    IsPlayable: 0
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 4
-    TypeOfAction: 1
-    TypeOfSound: 0
-    UIActionList: {fileID: 0}
-    TypeOfBuild: 0
-  - Name: Action 4
-    ExecuteTime: 9.1
-    Actor: 1
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
-    IsPlayable: 0
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 0
-    TypeOfAction: 2
-    TypeOfSound: 0
-    UIActionList: {fileID: 0}
-    TypeOfBuild: 0
-  - Name: Action 2
-    ExecuteTime: 9.2
-    Actor: 1
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
-    IsPlayable: 0
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 0
-    TypeOfAction: 4
-    TypeOfSound: 0
-    UIActionList: {fileID: 0}
-    TypeOfBuild: 0
-  - Name: 
     ExecuteTime: 8
     Actor: 2
     EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
@@ -96,30 +50,7 @@ MonoBehaviour:
     TypeOfSound: 0
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
-  - Name: Action 6
-    ExecuteTime: 20
-    Actor: 2
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
-    IsPlayable: 0
-    RotationDegrees: {x: 0, y: -50, z: 0}
-    TypeOfAnimation: 0
-    TypeOfAction: 5
-    TypeOfSound: 0
-    UIActionList: {fileID: 0}
-    TypeOfBuild: 0
-  - Name: 
-    ExecuteTime: 1000
-    Actor: 2
-    EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    IsPlayable: 0
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 3
-    TypeOfAction: 3
-    TypeOfSound: 0
-    UIActionList: {fileID: 0}
-    TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Test
     ExecuteTime: 1000
     Actor: 0
@@ -132,3 +63,4 @@ MonoBehaviour:
     TypeOfSound: 0
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
+    ActionsOfCurtine: 0

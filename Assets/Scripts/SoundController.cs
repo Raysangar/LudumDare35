@@ -43,13 +43,13 @@ public class SoundController : MonoBehaviour {
 		}
 
 		switch (trackNumber){
-			case 0:
+			case 1:
 				sourceMusic.clip = Act01Track;
 				break;
-			case 1:
+			case 2:
 				sourceMusic.clip = Act02Track;
 				break;
-			case 2:
+			case 3:
 				sourceMusic.clip = Act03Track;
 				break;
 		}

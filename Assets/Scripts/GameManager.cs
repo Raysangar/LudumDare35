@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour {
   [SerializeField]
   private CurtineController curtineController;
 
+  [SerializeField]
+  private FocusController focusController;
+
   private bool gameStarted = false;
 
   public delegate void GameStartEventHandler ();
@@ -17,6 +20,12 @@ public class GameManager : MonoBehaviour {
   public static GameManager Instance {
     get { return instance; }
   }
+
+	void Awake(){
+		if(instance == null){
+			instance = this;
+		}
+	}
 
   void Start () {
     LifeController.Instance.OnGameOver += OnGameOver;
@@ -32,6 +41,7 @@ public class GameManager : MonoBehaviour {
 
   public void StartGame () {
     curtineController.OpenCurtine();
+	focusController.StopFocus();
     TimeManager.Instance.InitTime();
     OnGameStart();
   }

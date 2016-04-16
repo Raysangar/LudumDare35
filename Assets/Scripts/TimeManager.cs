@@ -41,7 +41,7 @@ public class TimeManager : MonoBehaviour {
       }
 
       if(initialized){
-        time += Time.time;
+		time += Time.deltaTime;
       }
     }
 	}

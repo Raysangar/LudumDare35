@@ -27,10 +27,10 @@ public class SpotLightController : MonoBehaviour {
 	}
 
 	void OnActionLaunchedCallback(int index){
-		light.enabled = true;
 		if(index < ActionManager.Instance.ActionList.Actions.Count){
 			if(ActionManager.Instance.ActionList.Actions[index].Actor != null && ActionManager.Instance.ActionList.Actions[index].TypeOfAction == ActionType.Move)
 			{
+				light.enabled = true;
 				target = ActionManager.Instance.GetActorOfType(ActionManager.Instance.ActionList.Actions[index].Actor).transform;
 			}
 		}

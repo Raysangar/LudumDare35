@@ -4,6 +4,11 @@ using System.Collections;
 public class SpotLightController : MonoBehaviour {
 
 	private Transform target;
+	private Light light;
+
+	void Awake(){
+		light = GetComponent<Light>();
+	}
 
 	void OnEnable(){
 		TimeManager.OnActionLaunched += OnActionLaunchedCallback;
@@ -22,6 +27,7 @@ public class SpotLightController : MonoBehaviour {
 	}
 
 	void OnActionLaunchedCallback(int index){
+		light.enabled = true;
 		if(index < ActionManager.Instance.ActionList.Actions.Count){
 			if(ActionManager.Instance.ActionList.Actions[index].Actor != null)
 			{

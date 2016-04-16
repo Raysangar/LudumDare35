@@ -116,6 +116,10 @@ public class ActionListEditor : EditorWindow {
 					inventoryItemList.Actions[viewIndex-1].EffectPosition = EditorGUILayout.ObjectField ("Start Position", inventoryItemList.Actions[viewIndex-1].EffectPosition, typeof (Transform), false) as Transform;
 					inventoryItemList.Actions[viewIndex-1].EndPosition = EditorGUILayout.ObjectField ("End Position", inventoryItemList.Actions[viewIndex-1].EndPosition, typeof (Transform), false) as Transform;
 				}
+
+				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Rotate){
+					inventoryItemList.Actions[viewIndex-1].RotationDegrees = EditorGUILayout.Vector3Field ("Rotation Degrees", inventoryItemList.Actions[viewIndex-1].RotationDegrees, GUILayout.ExpandWidth(false));
+				}
 				GUILayout.Space(10);
 
 				GUILayout.BeginHorizontal ();

@@ -4,6 +4,9 @@ using System.Collections;
 public class SoundManager : MonoBehaviour {
 
   [SerializeField]
+  private AudioSource ambient;
+
+  [SerializeField]
   private AudioSource applause1;
 
   [SerializeField]
@@ -36,6 +39,9 @@ public class SoundManager : MonoBehaviour {
 
   void Start () {
     lifeController = LifeController.Instance;
+    GameManager.Instance.OnGameStart += OnGameStart;
+    TimeManager.Instance.OnGameFinished += OnGameFinished;
+    LifeController.Instance.OnGameOver += OnGameLost;
   }
 
   public static SoundManager Instance {
@@ -44,6 +50,17 @@ public class SoundManager : MonoBehaviour {
 
   void Update () {
     crowd.volume =  (lifeController.MaxLife/2 - lifeController.CurrentLife) / (lifeController.MaxLife/2);
+  }
+
+  public void OnGameStart () {
+    StartCoroutine(fadeAmbient());
+  }
+
+  private IEnumerator fadeAmbient () {
+    while (ambient.volume > 0) {
+      yield return 0;
+    }
+    ambient.Stop();
   }
 
   public void PlayApplause() {

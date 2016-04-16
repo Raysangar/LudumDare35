@@ -25,7 +25,7 @@ public class InputController : MonoBehaviour {
   void Start () {
     lifeController = LifeController.Instance;
     soundManager = SoundManager.Instance;
-    GameManager.Instance.OnGameStart += OnGameStart;
+    GameControlManager.Instance.OnGameStart += OnGameStart;
   }
 
   public void OnGameStart () {

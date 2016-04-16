@@ -39,7 +39,7 @@ public class SoundManager : MonoBehaviour {
 
   void Start () {
     lifeController = LifeController.Instance;
-    GameManager.Instance.OnGameStart += OnGameStart;
+    GameControlManager.Instance.OnGameStart += OnGameStart;
     TimeManager.Instance.OnGameFinished += OnGameFinished;
     LifeController.Instance.OnGameOver += OnGameLost;
   }

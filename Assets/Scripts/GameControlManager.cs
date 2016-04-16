@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameControlManager : MonoBehaviour {
 
   [SerializeField]
   private CurtineController curtineController;
@@ -15,16 +15,14 @@ public class GameManager : MonoBehaviour {
   public delegate void GameStartEventHandler ();
   public event GameStartEventHandler OnGameStart = delegate {};
 
-  private static GameManager instance;
+  private static GameControlManager instance;
 
-  public static GameManager Instance {
+  public static GameControlManager Instance {
     get { return instance; }
   }
 
 	void Awake(){
-		if(instance == null){
-			instance = this;
-		}
+		instance = this;
 	}
 
   void Start () {

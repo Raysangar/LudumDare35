@@ -9,15 +9,15 @@ public class TimeManager : MonoBehaviour {
 
 	private float time;
 	private bool initialized;
-  private bool onGameFinishedLaunched = false;
+    private bool onGameFinishedLaunched = false;
 
 	public delegate void OnTimeForAction(int index);
 	public static OnTimeForAction OnActionLaunched;
 
-  public delegate void GameFinishedEventHandler();
-  public event GameFinishedEventHandler OnGameFinished = delegate{};
+    public delegate void GameFinishedEventHandler();
+    public event GameFinishedEventHandler OnGameFinished = delegate{};
 
-  private static TimeManager instance;
+    private static TimeManager instance;
 
 	private int index = 0;
 

@@ -13,10 +13,14 @@ public class UIAnimatorController : MonoBehaviour {
 
   void OnEnable () {
     LifeController.Instance.OnGameOver += OnGameOver;
+    GameManager.Instance.OnGameStart += OnPlay;
+    TimeManager.Instance.OnGameFinished += OnGameFinished;
   }
 
   void OnDisable () {
     LifeController.Instance.OnGameOver -= OnGameOver;
+    TimeManager.Instance.OnGameFinished -= OnGameFinished;
+    GameManager.Instance.OnGameStart -= OnPlay;
   }
 	
   public void OnPlay () {

@@ -2106,7 +2106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Characters
+  m_Text: 'Actions
 
 '
 --- !u!222 &1884080340
@@ -2172,7 +2172,7 @@ MonoBehaviour:
   - {fileID: 22431728, guid: 7d90352abddb847a1abe8cdd4b4bd83f, type: 2}
   - {fileID: 22470746, guid: acf2c6feb5e594391b70ddb693d7d0db, type: 2}
   eventSprites:
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   currentTimeMark: {fileID: 1585948446}
 --- !u!114 &2061584556
 MonoBehaviour:

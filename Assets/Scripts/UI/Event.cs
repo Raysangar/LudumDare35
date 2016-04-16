@@ -7,11 +7,11 @@ namespace UI {
 
     private RectTransform eventTransform;
 
-    private EventManager.ActionType actionType;
+    private ActionType actionType;
 
     private bool actionPending;
 
-    public Event (RectTransform eventPrefab, Transform parent, float eventInitPosition, float scaleFactor, EventManager.ActionType actionType) {
+    public Event (RectTransform eventPrefab, Transform parent, float eventInitPosition, float scaleFactor, ActionType actionType) {
       this.actionType = actionType;
       actionPending = true;
       eventTransform = RectTransform.Instantiate(eventPrefab);
@@ -70,7 +70,7 @@ namespace UI {
       get { return actionPending; }
     }
 
-    public EventManager.ActionType ActionType {
+    public ActionType ActionType {
       get { return actionType; }
     }
   }

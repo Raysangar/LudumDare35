@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[System.Serializable]
-public class Action {
-  
-  public float width;
+namespace UI {
+  [System.Serializable]
+  public class Action {
 
-  public float offset;
+    public float width;
 
-  public Action (float width, float offset) {
-    this.width = width;
-    this.offset = offset;
+    public float offset;
+
+    public ActionType actionType;
+
+    public Action (float width, float offset, ActionType actionType) {
+      this.width = width;
+      this.offset = offset;
+      this.actionType = actionType;
+    }
+  }
+
+  public enum ActionType {
+    Pig1, Pig2, Pig3, Wolf
   }
 }
+

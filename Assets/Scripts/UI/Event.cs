@@ -11,13 +11,13 @@ namespace UI {
 
     private bool actionPending;
 
-    public Event (RectTransform eventPrefab, Transform parent, float eventInitPosition, float scaleFactor, ActionType actionType) {
+    public Event (RectTransform eventPrefab, Transform parent, float eventInitPosition, float eventWidth, ActionType actionType) {
       this.actionType = actionType;
       actionPending = true;
       eventTransform = RectTransform.Instantiate(eventPrefab);
       setParent(parent);
       setInitPosition(eventInitPosition);
-      setScale(scaleFactor);
+      setScale(eventWidth);
     }
 
     public void setParent (Transform parent) {
@@ -44,10 +44,9 @@ namespace UI {
       eventTransform.localPosition = position;
     }
 
-    private void setScale (float scaleFactor) {
-      Debug.Log(scaleFactor);
+    private void setScale (float width) {
       Vector2 size = eventTransform.sizeDelta;
-      size.x *= scaleFactor;
+      size.x = width;
       eventTransform.sizeDelta = size;
     }
 

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44582fabcbe840098831358065e273a, type: 3}
   m_Name: InteractableActionSequence01
   m_EditorClassIdentifier: 
+  difficulty: 1
   actionList:
   - width: 1
     offset: 0

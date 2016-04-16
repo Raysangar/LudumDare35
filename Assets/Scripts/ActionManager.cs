@@ -13,6 +13,8 @@ public class ActionManager : MonoBehaviour {
 
 	public Action CurrentAction = null;
 
+	public bool[] ActionsState;
+
 	public delegate void OnActionPlayableHanlder(UI.ActionList actionList);
 	public static OnActionPlayableHanlder OnActionPlayable;
 
@@ -23,6 +25,7 @@ public class ActionManager : MonoBehaviour {
 	}
 
 	void Start(){
+		ActionsState = new bool[ActionList.Actions.Count];
 		pig1 = GameObject.FindGameObjectWithTag("Pig1");
 		pig2 = GameObject.FindGameObjectWithTag("Pig2");
 		pig3 = GameObject.FindGameObjectWithTag("Pig3");
@@ -45,7 +48,7 @@ public class ActionManager : MonoBehaviour {
 				if(ActionList.Actions[index].IsPlayable){
 					OnActionPlayable(ActionList.Actions[index].UIActionList);
 				}
-				Debug.Log(ActionList.Actions[index].TypeOfAction.ToString());
+				ActionsState[index] = true;
 				switch (ActionList.Actions[index].TypeOfAction){
 				case ActionType.Move:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
@@ -58,6 +61,9 @@ public class ActionManager : MonoBehaviour {
 					break;
 				case ActionType.ChangeCostume:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CostumeController>().ActivateCostume();
+					break;
+				case ActionType.PlayParticle:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ParticleController>().ActivateParticle();
 					break;
 				case ActionType.PlayAnimation:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AnimController>().PlayTransitionTo(ActionList.Actions[index].TypeOfAnimation);

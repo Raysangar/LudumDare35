@@ -34,8 +34,30 @@ MonoBehaviour:
     TypeOfAction: 5
     TypeOfSound: 0
     UIActionList: {fileID: 0}
-  - Name: Action 2
+  - Name: Action 3
     ExecuteTime: 9
+    Actor: 1
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 4
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+  - Name: Action 4
+    ExecuteTime: 9.1
+    Actor: 1
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 2
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+  - Name: Action 2
+    ExecuteTime: 9.2
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
@@ -45,17 +67,6 @@ MonoBehaviour:
     TypeOfAction: 4
     TypeOfSound: 0
     UIActionList: {fileID: 0}
-  - Name: 
-    ExecuteTime: 11
-    Actor: 1
-    EffectPosition: {fileID: 0}
-    EndPosition: {fileID: 0}
-    IsPlayable: 1
-    RotationDegrees: {x: 0, y: 0, z: 0}
-    TypeOfAnimation: 3
-    TypeOfAction: 1
-    TypeOfSound: 0
-    UIActionList: {fileID: 11400000, guid: 634a83de2c9a04f05aace215f7d7bed7, type: 2}
   - Name: 
     ExecuteTime: 8
     Actor: 2

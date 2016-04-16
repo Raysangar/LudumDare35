@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 46a487eb0e62c491e8bb4afd12bbdacc
+timeCreated: 1460816806
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CHARACTER_
+    100002: CHARACTER_Hub001
+    100004: CHARACTER_Hub002
+    100006: CHARACTER_Hub002Bone001
+    100008: CHARACTER_LArm1
+    100010: CHARACTER_LArm2
+    100012: CHARACTER_LArmCollarbone
+    100014: CHARACTER_LArmPalm
+    100016: CHARACTER_LLeg1
+    100018: CHARACTER_LLeg2
+    100020: CHARACTER_LLegPlatform
+    100022: CHARACTER_RArm1
+    100024: CHARACTER_RArm2
+    100026: CHARACTER_RArmCollarbone
+    100028: CHARACTER_RArmPalm
+    100030: CHARACTER_RLeg1
+    100032: CHARACTER_RLeg2
+    100034: CHARACTER_RLegPlatform
+    100036: CHARACTER_Spine1
+    100038: CHARACTER_Spine2
+    100040: //RootNode
+    400000: CHARACTER_
+    400002: CHARACTER_Hub001
+    400004: CHARACTER_Hub002
+    400006: CHARACTER_Hub002Bone001
+    400008: CHARACTER_LArm1
+    400010: CHARACTER_LArm2
+    400012: CHARACTER_LArmCollarbone
+    400014: CHARACTER_LArmPalm
+    400016: CHARACTER_LLeg1
+    400018: CHARACTER_LLeg2
+    400020: CHARACTER_LLegPlatform
+    400022: CHARACTER_RArm1
+    400024: CHARACTER_RArm2
+    400026: CHARACTER_RArmCollarbone
+    400028: CHARACTER_RArmPalm
+    400030: CHARACTER_RLeg1
+    400032: CHARACTER_RLeg2
+    400034: CHARACTER_RLegPlatform
+    400036: CHARACTER_Spine1
+    400038: CHARACTER_Spine2
+    400040: //RootNode
+    7400000: SOPLA
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SOPLA
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CHARACTER_
+        weight: 1
+      - path: CHARACTER_Hub001
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_LLeg1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_LLeg1/CHARACTER_LLeg2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_RLeg1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_RLeg1/CHARACTER_RLeg2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_Hub002Bone001
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1/CHARACTER_LArm2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1/CHARACTER_LArm2/CHARACTER_LArmPalm
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1/CHARACTER_RArm2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1/CHARACTER_RArm2/CHARACTER_RArmPalm
+        weight: 1
+      - path: CHARACTER_LLegPlatform
+        weight: 1
+      - path: CHARACTER_RLegPlatform
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

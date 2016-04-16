@@ -30,6 +30,10 @@ public class AnimController : MonoBehaviour {
 		animator.CrossFade("Dead",0.0f);	
 	}
 
+	public void Blow(){
+		animator.CrossFade("Blow",0.0f);	
+	}
+
 	public void PlayTransitionTo(AnimationType animType){
 		switch (animType){
 		case AnimationType.Idle:
@@ -46,6 +50,9 @@ public class AnimController : MonoBehaviour {
 				break;
 		case AnimationType.Death:
 			Dead();
+			break;
+		case AnimationType.Blow:
+			Blow();
 			break;
 		}
 	}

@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[System.Serializable]
-public class Action {
-  
-  public float width;
+namespace UI {
+	[System.Serializable]
+	public class Action {
+	  
+	  public float width;
 
-  public float offset;
+	  public float offset;
 
-  public Action (float width, float offset) {
-    this.width = width;
-    this.offset = offset;
-  }
+		public EventManager.ActionType actionType;
+
+		public Action (float width, float offset, EventManager.ActionType actionType) {
+			this.actionType = actionType;
+		    this.width = width;
+		    this.offset = offset;
+	  }
+	}
 }

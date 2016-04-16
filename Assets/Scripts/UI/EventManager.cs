@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UI;
 
 namespace UI {
   public class EventManager : MonoBehaviour {
@@ -34,7 +35,7 @@ namespace UI {
     void Start () {
       eventParent = transform.FindChild("EventSlider").GetComponent<Transform>();
       events = new List<Event>();
-      AddEvent(new List<Action>(){new Action(1, 0)}, ActionType.Pig1);
+			AddEvent(new List<Action>(){new Action(1, 0, ActionType.Pig1)}, ActionType.Pig1);
     }
 
     void Update () {

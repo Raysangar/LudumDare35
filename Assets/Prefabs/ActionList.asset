@@ -21,15 +21,17 @@ MonoBehaviour:
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
+    UIActions: []
   - Name: 
     ExecuteTime: 7.5
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
-    IsPlayable: 1
-    TypeOfAnimation: 3
+    IsPlayable: 0
+    TypeOfAnimation: 5
     TypeOfAction: 1
     TypeOfSound: 0
+    UIActions: []
   - Name: 
     ExecuteTime: 8
     Actor: 2
@@ -39,6 +41,7 @@ MonoBehaviour:
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
+    UIActions: []
   - Name: 
     ExecuteTime: 1000
     Actor: 2
@@ -48,3 +51,4 @@ MonoBehaviour:
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
+    UIActions: []

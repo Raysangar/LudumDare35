@@ -44,6 +44,7 @@ public class ActionListEditor : EditorWindow {
 		}
 		GUILayout.EndHorizontal ();
 
+
 		if (inventoryItemList == null) 
 		{
 			GUILayout.BeginHorizontal ();
@@ -119,6 +120,9 @@ public class ActionListEditor : EditorWindow {
 
 				GUILayout.BeginHorizontal ();
 				inventoryItemList.Actions[viewIndex-1].IsPlayable = (bool)EditorGUILayout.Toggle("Is Playable", inventoryItemList.Actions[viewIndex-1].IsPlayable, GUILayout.ExpandWidth(false));
+				if(inventoryItemList.Actions[viewIndex-1].IsPlayable){
+//					inventoryItemList.Actions[viewIndex-1].UIActions;
+				}
 				GUILayout.EndHorizontal ();
 
 				GUILayout.Space(10);

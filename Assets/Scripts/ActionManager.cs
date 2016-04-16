@@ -10,6 +10,7 @@ public class ActionManager : MonoBehaviour {
 	private GameObject pig2;
 	private GameObject pig3;
 	private GameObject wolf;
+	private GameObject director;
 
 	public Action CurrentAction = null;
 
@@ -31,6 +32,7 @@ public class ActionManager : MonoBehaviour {
 		pig2 = GameObject.FindGameObjectWithTag("Pig2");
 		pig3 = GameObject.FindGameObjectWithTag("Pig3");
 		wolf = GameObject.FindGameObjectWithTag("Wolf");
+		director = GameObject.FindGameObjectWithTag("Director");
 	}
 
 	void OnEnable(){
@@ -69,6 +71,9 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.PlayAnimation:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AnimController>().PlayTransitionTo(ActionList.Actions[index].TypeOfAnimation);
 					break;
+				case ActionType.PlaySound:
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<SoundController>().PlayTransitionTo(ActionList.Actions[index].TypeOfSound);
+					break;
 				default:
 					break;
 				}
@@ -87,6 +92,8 @@ public class ActionManager : MonoBehaviour {
 			return pig3;
 		case ActorType.Wolf:
 			return wolf;
+		case ActorType.Director:
+			return director;
 		}
 		return null;
 	}

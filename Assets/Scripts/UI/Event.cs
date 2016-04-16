@@ -45,6 +45,7 @@ namespace UI {
     }
 
     private void setScale (float scaleFactor) {
+      Debug.Log(scaleFactor);
       Vector2 size = eventTransform.sizeDelta;
       size.x *= scaleFactor;
       eventTransform.sizeDelta = size;

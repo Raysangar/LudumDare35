@@ -19,7 +19,13 @@ public class SoundManager : MonoBehaviour {
   private AudioSource silence;
 
   [SerializeField]
-  private AudioSource crwod;
+  private AudioSource crowd;
+
+  [SerializeField]
+  private AudioSource lose;
+
+  [SerializeField]
+  private AudioSource[] wins;
 
   private static SoundManager instance;
   private LifeController lifeController;
@@ -37,7 +43,7 @@ public class SoundManager : MonoBehaviour {
   }
 
   void Update () {
-    crwod.volume =  (lifeController.MaxLife/2 - lifeController.CurrentLife) / (lifeController.MaxLife/2);
+    crowd.volume =  (lifeController.MaxLife/2 - lifeController.CurrentLife) / (lifeController.MaxLife/2);
   }
 
   public void PlayApplause() {
@@ -54,6 +60,23 @@ public class SoundManager : MonoBehaviour {
     } else if (lifeController.MaxLife * 0.4f > lifeController.CurrentLife) {
       boo1.Play();
     }
+  }
+
+  public void OnGameLost () {
+    lose.Play();
+  }
+
+  public void OnGameFinished () {
+    if (lifeController.MaxLife * 0.8f < lifeController.CurrentLife) {
+      wins[3].Play();
+    } else if (lifeController.MaxLife * 0.6f < lifeController.CurrentLife) {
+      wins[2].Play();
+    } else if (lifeController.MaxLife * 0.4f < lifeController.CurrentLife) {
+      wins[1].Play();
+    } else {
+      wins[0].Play();
+    }
+    
   }
 
 }

@@ -50,11 +50,13 @@ namespace UI {
       eventTransform.sizeDelta = size;
     }
 
-    public void DisableIfPasses (float currentTimeMarkPosition) {
+    public bool DisableIfPasses (float currentTimeMarkPosition) {
       if ((eventTransform.localPosition.x + eventTransform.rect.width/2) < currentTimeMarkPosition && actionPending) {
         LifeController.Instance.OnEventTimeOut();
         actionPending = false;
+        return true;
       }
+      return false;
     }
 
     public void Disable () {

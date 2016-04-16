@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d940e7dbb99b442bcbe150a2bd462c5a, type: 3}
+  m_Name: ActionList
+  m_EditorClassIdentifier: 
+  Actions:
+  - Name: 
+    ExecuteTime: 1
+    Actor: 1
+    EffectPosition: {fileID: 472924, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    EndPosition: {fileID: 435452, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+  - Name: 
+    ExecuteTime: 7.5
+    Actor: 1
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 1
+    TypeOfAnimation: 3
+    TypeOfAction: 1
+    TypeOfSound: 0
+  - Name: 
+    ExecuteTime: 8
+    Actor: 2
+    EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+  - Name: 
+    ExecuteTime: 1000
+    Actor: 2
+    EffectPosition: {fileID: 423416, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0

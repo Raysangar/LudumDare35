@@ -26,6 +26,7 @@ public class ActionManager : MonoBehaviour {
 
 	void Start(){
 		ActionsState = new bool[ActionList.Actions.Count];
+
 		pig1 = GameObject.FindGameObjectWithTag("Pig1");
 		pig2 = GameObject.FindGameObjectWithTag("Pig2");
 		pig3 = GameObject.FindGameObjectWithTag("Pig3");

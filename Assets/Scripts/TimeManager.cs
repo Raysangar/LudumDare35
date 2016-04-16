@@ -7,6 +7,9 @@ public class TimeManager : MonoBehaviour {
 
 	public float[] timesToTrigger;
 
+	private float time;
+	private bool initialized;
+
 	public delegate void OnTimeForAction(int index);
 	public static OnTimeForAction OnActionLaunched;
 
@@ -20,10 +23,19 @@ public class TimeManager : MonoBehaviour {
 	}
 
 	void Update(){
-		if(Time.time >= timesToTrigger[index]){
+		
+		if(time >= timesToTrigger[index]){
 			Debug.Log("Action numero " + index + " lanzada");
 			OnActionLaunched(index);
 			index++;
 		}
+
+		if(initialized){
+			time += Time.time;
+		}
+	}
+
+	public void InitTime(){
+		initialized = true;
 	}
 }

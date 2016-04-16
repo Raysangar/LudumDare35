@@ -50,8 +50,13 @@ namespace UI {
 
 	public void AddEvent (ActionList actions) {
 		for (int i = 0; i < actions.Sequence.Count; ++i) {
-			float initPosition = Screen.width/2 + eventPrefabs[0].rect.width/2 + actions.Sequence[i].offset;
-			Event actionEvent = new Event(eventPrefabs[(int)actions.Sequence[i].actionType], eventParent, initPosition, actions.Sequence[0].width, actions.Sequence[i].actionType);
+        float initPosition;
+        if (i == 0) {
+          initPosition = Screen.width/2 + eventPrefabs[0].rect.width/2 + actions.Sequence[i].offset;
+        } else {
+          initPosition = events[events.Count -1].EventTransform.localPosition.x + events[events.Count -1].EventTransform.rect.width/2 + eventPrefabs[0].rect.width * actions.Sequence[i].width;
+        }
+			  Event actionEvent = new Event(eventPrefabs[(int)actions.Sequence[i].actionType], eventParent, initPosition, actions.Sequence[i].width, actions.Sequence[i].actionType);
         actionEvent.DestroyController.OnOutsideOfCamera += OnEventDestroyed;
         events.Add(actionEvent);
       }

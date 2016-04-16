@@ -9,9 +9,6 @@ namespace UI {
     private int timeWindowDisplayed;
 
     [SerializeField]
-    private int eventWidthPerSecond;
-
-    [SerializeField]
     private RectTransform[] eventPrefabs;
 
     [SerializeField]
@@ -22,7 +19,9 @@ namespace UI {
 
     private List<Event> events;
     private Transform eventParent;
+    private int currentDifficulty;
     private static EventManager instance;
+    private float defaultWidth;
 
     void Awake () {
       instance = this;
@@ -31,6 +30,7 @@ namespace UI {
     void Start () {
       eventParent = transform.FindChild("EventSlider").GetComponent<Transform>();
       events = new List<Event>();
+      defaultWidth = eventPrefabs[0].rect.width;
     }
 
 	void OnEnable(){
@@ -43,20 +43,22 @@ namespace UI {
 
     void Update () {
       foreach (Event graphicEvent in events) {
-        graphicEvent.Move(eventWidthPerSecond * Time.deltaTime * 4);
+        graphicEvent.Move(eventPrefabs[0].rect.width * Time.deltaTime * currentDifficulty);
         graphicEvent.DisableIfPasses(currentTimeMark.localPosition.x);
       }
     }
 
 	public void AddEvent (ActionList actions) {
+      currentDifficulty = actions.difficulty;
 		for (int i = 0; i < actions.Sequence.Count; ++i) {
         float initPosition;
-        if (i == 0) {
-          initPosition = Screen.width/2 + eventPrefabs[0].rect.width/2 + actions.Sequence[i].offset;
+        float width = actions.Sequence[i].width * currentDifficulty * defaultWidth;
+        if (events.Count <= 0 || events[events.Count -1].EventTransform.localPosition.x < (Screen.width/2 - events[events.Count - 1].EventTransform.rect.width)) {
+          initPosition = Screen.width/2 + width/2 + (defaultWidth * actions.Sequence[i].offset * currentDifficulty);
         } else {
-          initPosition = events[events.Count -1].EventTransform.localPosition.x + events[events.Count -1].EventTransform.rect.width/2 + eventPrefabs[0].rect.width * actions.Sequence[i].width;
+          initPosition = (events[events.Count -1].EventTransform.localPosition.x + events[events.Count -1].EventTransform.rect.width/2) + width/2 + defaultWidth * actions.Sequence[i].offset * currentDifficulty;
         }
-			  Event actionEvent = new Event(eventPrefabs[(int)actions.Sequence[i].actionType], eventParent, initPosition, actions.Sequence[i].width, actions.Sequence[i].actionType);
+        Event actionEvent = new Event(eventPrefabs[(int)actions.Sequence[i].actionType], eventParent, initPosition, width, actions.Sequence[i].actionType);
         actionEvent.DestroyController.OnOutsideOfCamera += OnEventDestroyed;
         events.Add(actionEvent);
       }

@@ -23,7 +23,7 @@ public class TimeManager : MonoBehaviour {
 
 	void Awake(){
     instance = this;
-		timesToTrigger = new float[100];
+		timesToTrigger = new float[200];
 		for (int i = 0; i < ActionList.Actions.Count; i++) {
 			timesToTrigger[i] = ActionList.Actions[i].ExecuteTime;
 		}

@@ -44,6 +44,9 @@ public class AnimController : MonoBehaviour {
 	public void Asustados(){
 		animator.CrossFade("Asustados",0.0f);	
 	}
+	public void CloseDoor(){
+		GetComponent<ConstructController>().actualHouse.GetComponent<Animator>().CrossFade("CloseDoor",0.0f);
+	}
 
 	public void PlayTransitionTo(AnimationType animType){
 		switch (animType){
@@ -73,6 +76,9 @@ public class AnimController : MonoBehaviour {
 			break;
 		case AnimationType.Asustados:
 			Asustados();
+			break;
+		case AnimationType.CloseDoor:
+			CloseDoor();
 			break;
 		}
 	}

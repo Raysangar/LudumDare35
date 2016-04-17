@@ -33,6 +33,10 @@ public class AnimController : MonoBehaviour {
 		animator.CrossFade("Blow",0.0f);	
 	}
 
+	public void Arbol(){
+		animator.CrossFade("Arbol",0.0f);	
+	}
+
 	public void PlayTransitionTo(AnimationType animType){
 		switch (animType){
 		case AnimationType.Idle:
@@ -52,6 +56,9 @@ public class AnimController : MonoBehaviour {
 			break;
 		case AnimationType.Blow:
 			Blow();
+			break;
+		case AnimationType.Arbol:
+			Arbol();
 			break;
 		}
 	}

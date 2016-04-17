@@ -58,7 +58,6 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.Move:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = true;
-//					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().moveUnitsPerSecond.value = ActionList.Actions[index].Movement;
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().stopPosition = ActionList.Actions[index].EndPosition;
 					break;
 				case ActionType.Rotate:
@@ -73,6 +72,8 @@ public class ActionManager : MonoBehaviour {
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ParticleController>().ActivateParticle();
 					break;
 				case ActionType.PlayAnimation:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = false;
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = false;
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AnimController>().PlayTransitionTo(ActionList.Actions[index].TypeOfAnimation);
 					break;
 				case ActionType.PlaySound:

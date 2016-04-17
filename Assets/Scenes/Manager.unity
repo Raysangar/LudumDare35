@@ -240,6 +240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle00: {fileID: 182535884}
+  particlesPrefab: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+  scaleFactor: 0.2
 --- !u!4 &4821472
 Transform:
   m_ObjectHideFlags: 0
@@ -1096,6 +1098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle00: {fileID: 340087585}
+  particlesPrefab: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+  scaleFactor: 0.2
 --- !u!114 &161225972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,7 +1315,6 @@ GameObject:
   - 4: {fileID: 182535881}
   - 198: {fileID: 182535884}
   - 199: {fileID: 182535883}
-  - 114: {fileID: 182535882}
   m_Layer: 0
   m_Name: Smoke Puff Puffy Soft PS (1)
   m_TagString: Untagged
@@ -1331,19 +1334,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3259928}
   m_RootOrder: 5
---- !u!114 &182535882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11409432, guid: 8571c773a91f14ae6845e48ab36c3567,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 182535880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de0ea37652734cc7852d54daaf7ad9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle00: {fileID: 182535884}
 --- !u!199 &182535883
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -2965,7 +2955,6 @@ GameObject:
   - 4: {fileID: 194365342}
   - 198: {fileID: 194365345}
   - 199: {fileID: 194365344}
-  - 114: {fileID: 194365343}
   m_Layer: 0
   m_Name: Smoke Puff Puffy Soft PS (1)
   m_TagString: Untagged
@@ -2985,19 +2974,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1783264338}
   m_RootOrder: 0
---- !u!114 &194365343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11404536, guid: 8571c773a91f14ae6845e48ab36c3567,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 194365341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de0ea37652734cc7852d54daaf7ad9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle00: {fileID: 194365345}
 --- !u!199 &194365344
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -4500,52 +4476,6 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!1001 &209275033
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 109624, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-      propertyPath: m_Name
-      value: Positions (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &209833632
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,7 +5212,6 @@ GameObject:
   - 4: {fileID: 340087582}
   - 198: {fileID: 340087585}
   - 199: {fileID: 340087584}
-  - 114: {fileID: 340087583}
   m_Layer: 0
   m_Name: Smoke Puff Puffy Soft PS
   m_TagString: Untagged
@@ -5302,19 +5231,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 161225965}
   m_RootOrder: 5
---- !u!114 &340087583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11409432, guid: 8571c773a91f14ae6845e48ab36c3567,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 340087581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de0ea37652734cc7852d54daaf7ad9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle00: {fileID: 340087585}
 --- !u!199 &340087584
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -10736,6 +10652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle00: {fileID: 194365345}
+  particlesPrefab: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+  scaleFactor: 0.8
 --- !u!114 &1026962134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12449,7 +12367,6 @@ GameObject:
   - 4: {fileID: 1331637675}
   - 198: {fileID: 1331637678}
   - 199: {fileID: 1331637677}
-  - 114: {fileID: 1331637676}
   m_Layer: 0
   m_Name: Smoke Puff Puffy Soft PS
   m_TagString: Untagged
@@ -12469,19 +12386,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1865037653}
   m_RootOrder: 5
---- !u!114 &1331637676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11409432, guid: 8571c773a91f14ae6845e48ab36c3567,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1331637674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de0ea37652734cc7852d54daaf7ad9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle00: {fileID: 1331637678}
 --- !u!199 &1331637677
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -14880,6 +14784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle00: {fileID: 1695915560}
+  particlesPrefab: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+  scaleFactor: 0.4
 --- !u!1 &1427343646
 GameObject:
   m_ObjectHideFlags: 0
@@ -16185,7 +16091,6 @@ GameObject:
   - 4: {fileID: 1695915557}
   - 198: {fileID: 1695915560}
   - 199: {fileID: 1695915559}
-  - 114: {fileID: 1695915558}
   m_Layer: 0
   m_Name: Smoke Puff Puffy Soft PS (2)
   m_TagString: Untagged
@@ -16205,19 +16110,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1424536929}
   m_RootOrder: 6
---- !u!114 &1695915558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11409432, guid: 8571c773a91f14ae6845e48ab36c3567,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1695915556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de0ea37652734cc7852d54daaf7ad9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle00: {fileID: 1695915560}
 --- !u!199 &1695915559
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -18863,6 +18755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle00: {fileID: 1331637678}
+  particlesPrefab: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+  scaleFactor: 0.2
 --- !u!114 &1865037656
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7761,6 +7761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &543764117
 Animator:
   serializedVersion: 3
@@ -8601,6 +8602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &693402478
 Animator:
   serializedVersion: 3
@@ -11153,6 +11155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1157897942
 Animator:
   serializedVersion: 3
@@ -11719,6 +11722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1207166316
 Animator:
   serializedVersion: 3
@@ -15731,6 +15735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1600399960
 Animator:
   serializedVersion: 3
@@ -17739,6 +17744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1715253774
 Animator:
   serializedVersion: 3
@@ -17959,6 +17965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1761976483
 Animator:
   serializedVersion: 3
@@ -19541,6 +19548,30 @@ Prefab:
     - target: {fileID: 460988, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478250, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478656, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468858, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459406, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22470920, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493102, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}

@@ -16,10 +16,10 @@ public class InputController : MonoBehaviour {
   };
 
   private Dictionary<KeyCode, UI.ActionType> actionsKeyboardDictionary = new Dictionary<KeyCode, UI.ActionType>() {
-    { KeyCode.Q, UI.ActionType.Pig1 },
-    { KeyCode.W, UI.ActionType.Pig2 },
-    { KeyCode.E, UI.ActionType.Pig3 },
-    { KeyCode.R, UI.ActionType.Wolf },
+    { KeyCode.Alpha1, UI.ActionType.Pig1 },
+    { KeyCode.Alpha2, UI.ActionType.Pig2 },
+    { KeyCode.Alpha3, UI.ActionType.Pig3 },
+    { KeyCode.Alpha4, UI.ActionType.Wolf },
   };
 
   void Start () {
@@ -49,6 +49,7 @@ public class InputController : MonoBehaviour {
   private void onActionTriggered (UI.ActionType actionType) {
     if (UI.EventManager.Instance.CheckEventMatches(actionType)) {
       lifeController.OnEventSuccess();
+      soundManager.PlayCorrectInputFeedback();
     } else {
       lifeController.OnEventFailed();
       soundManager.PlayBoo();

@@ -30,6 +30,9 @@ public class SoundManager : MonoBehaviour {
   [SerializeField]
   private AudioSource[] wins;
 
+  [SerializeField]
+  private AudioSource correctInput;
+
   private static SoundManager instance;
   private LifeController lifeController;
 
@@ -59,15 +62,18 @@ public class SoundManager : MonoBehaviour {
   private IEnumerator fadeAmbient () {
     while (ambient.volume > 0) {
       yield return 0;
+      ambient.volume -= Time.deltaTime/2;
     }
     ambient.Stop();
   }
 
   public void PlayApplause() {
     if (lifeController.MaxLife * 0.8f < lifeController.CurrentLife) {
-      applause2.Play();
+      if (!applause2.isPlaying)
+        applause2.Play();
     } else if (lifeController.MaxLife * 0.6f < lifeController.CurrentLife) {
-      applause1.Play();
+      if (!applause1.isPlaying)
+        applause1.Play();
     }
   }
 
@@ -81,6 +87,10 @@ public class SoundManager : MonoBehaviour {
         boo1.Play();
       } 
     }
+  }
+
+  public void PlayCorrectInputFeedback () {
+    correctInput.Play();
   }
 
   public void OnGameLost () {

@@ -37,6 +37,14 @@ public class AnimController : MonoBehaviour {
 		animator.CrossFade("Arbol",0.0f);	
 	}
 
+	public void ArbolReves(){
+		animator.CrossFade("Arbol Del Reves",0.0f);	
+	}
+
+	public void Asustados(){
+		animator.CrossFade("Asustados",0.0f);	
+	}
+
 	public void PlayTransitionTo(AnimationType animType){
 		switch (animType){
 		case AnimationType.Idle:
@@ -59,6 +67,12 @@ public class AnimController : MonoBehaviour {
 			break;
 		case AnimationType.Arbol:
 			Arbol();
+			break;
+		case AnimationType.ArbolReves:
+			ArbolReves();
+			break;
+		case AnimationType.Asustados:
+			Asustados();
 			break;
 		}
 	}

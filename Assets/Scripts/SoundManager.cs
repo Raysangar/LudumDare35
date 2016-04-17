@@ -73,9 +73,13 @@ public class SoundManager : MonoBehaviour {
 
   public void PlayBoo() {
     if (lifeController.MaxLife * 0.2f > lifeController.CurrentLife) {
-      boo2.Play();
+      if (!boo2.isPlaying) {
+        boo2.Play();
+      }
     } else if (lifeController.MaxLife * 0.4f > lifeController.CurrentLife) {
-      boo1.Play();
+      if (!boo1.isPlaying) {
+        boo1.Play();
+      } 
     }
   }
 

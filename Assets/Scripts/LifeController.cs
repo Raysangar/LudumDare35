@@ -50,11 +50,13 @@ public class LifeController : MonoBehaviour {
   public void OnEventFailed () {
     Debug.Log("Failed");
     decreaseLife(eventFailedPenalty);
+		SoundManager.Instance.PlayBoo();
   }
  
   public void OnEventTimeOut () {
     Debug.Log("Timeout");
-    decreaseLife(eventTimeoutPenalty);
+		decreaseLife(eventTimeoutPenalty);
+		SoundManager.Instance.PlayBoo();
   }
 
   private void decreaseLife (int lifeDecresed) {

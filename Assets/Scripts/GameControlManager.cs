@@ -10,6 +10,12 @@ public class GameControlManager : MonoBehaviour {
   [SerializeField]
   private FocusController focusController;
 
+  [SerializeField]
+  private float TimeToInit;
+
+	[SerializeField]
+	private int indexAction;
+
   private bool gameStarted = false;
 
   public delegate void GameStartEventHandler ();
@@ -40,7 +46,11 @@ public class GameControlManager : MonoBehaviour {
   public void StartGame () {
     curtineController.OpenCurtine();
 	focusController.StopFocus();
-    TimeManager.Instance.InitTime();
+#if TEST
+		TimeManager.Instance.InitTimeAt(TimeToInit,indexAction);
+#else
+	TimeManager.Instance.InitTime();
+#endif
     OnGameStart();
   }
 

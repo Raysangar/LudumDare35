@@ -6,10 +6,23 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: CERDO_CABEZA
+    100004: LOBO_COLA
+    100006: VRayLight001
     400000: //RootNode
+    400002: CERDO_CABEZA
+    400004: LOBO_COLA
+    400006: VRayLight001
     2300000: //RootNode
+    2300002: CERDO_CABEZA
+    2300004: LOBO_COLA
     3300000: //RootNode
+    3300002: CERDO_CABEZA
+    3300004: LOBO_COLA
     4300000: LOBO_CABEZA
+    4300002: CERDO_CABEZA
+    4300004: LOBO_COLA
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

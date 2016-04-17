@@ -54,6 +54,12 @@ public class TimeManager : MonoBehaviour {
 		initialized = true;
 	}
 
+	public void InitTimeAt(float timeAt, int indexAt){
+		time = timeAt;
+		index = indexAt;
+		initialized = true;
+	}
+
   public void StopTime () {
     initialized = false;
   }

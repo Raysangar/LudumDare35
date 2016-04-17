@@ -1,27 +1,15 @@
 fileFormatVersion: 2
-guid: 3bb022fbd11a74837a0a87520320eafd
-timeCreated: 1460823612
+guid: fe9127c6ecb9d4c4f96ea4a864bf8f6e
+timeCreated: 1460891666
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: CERDO_CABEZA
-    100004: LOBO_COLA
-    100006: VRayLight001
     400000: //RootNode
-    400002: CERDO_CABEZA
-    400004: LOBO_COLA
-    400006: VRayLight001
     2300000: //RootNode
-    2300002: CERDO_CABEZA
-    2300004: LOBO_COLA
     3300000: //RootNode
-    3300002: CERDO_CABEZA
-    3300004: LOBO_COLA
-    4300000: LOBO_COLA
-    4300002: CERDO_CABEZA
-    7400000: Take 001
+    4300000: Arbol
     9500000: //RootNode
   materials:
     importMaterials: 1

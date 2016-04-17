@@ -9,14 +9,20 @@ public class ConstructController : MonoBehaviour {
 
 	public Transform housePosition;
 
+	private GameObject actualHouse;
+
 	public void InstantianteCardboardHouse(){
-		Instantiate(CardboardHouse, housePosition.position, CardboardHouse.transform.rotation);
+		actualHouse = (GameObject) Instantiate(CardboardHouse, housePosition.position, CardboardHouse.transform.rotation);
 	}
 	public void InstantianteWoodHouse(){
-		Instantiate(WoodHouse, housePosition.position, WoodHouse.transform.rotation);
+		actualHouse = (GameObject) Instantiate(WoodHouse, housePosition.position, WoodHouse.transform.rotation);
 	}
 	public void InstantianteBrickHouse(){
-		Instantiate(BrickHouse, housePosition.position, BrickHouse.transform.rotation);
+		actualHouse = (GameObject) Instantiate(BrickHouse, housePosition.position, BrickHouse.transform.rotation);
+	}
+
+	public void CleanHouses(){
+		Destroy(actualHouse);
 	}
 
 	public void ConstructHouseByType(BuildType type){

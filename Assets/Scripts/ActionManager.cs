@@ -81,6 +81,15 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.Build:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().ConstructHouseByType(ActionList.Actions[index].TypeOfBuild);
 					break;
+				case ActionType.Clean:
+					if(GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>() != null){
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().CleanHouses();
+					}
+					if(GetActorOfType(ActionList.Actions[index].Actor).GetComponent<Actor>() != null){
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<Actor>().CleanActor();
+					}
+
+					break;
 				case ActionType.Curtine:
 					if(ActionList.Actions[index].ActionsOfCurtine == CurtineActions.Close){
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().CloseCurtine();

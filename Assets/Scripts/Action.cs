@@ -23,7 +23,7 @@ public class Action {
 	public CurtineActions ActionsOfCurtine;
 }
 
-public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound, ChangeCostume, Rotate, Build, Curtine, Clean, EndAction }
+public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound, ChangeCostume, Rotate, Build, Curtine, Clean, EndAction, Credits }
 public enum BuildType {Cardboard, Wood, Brick}
 public enum CurtineActions {Open, Close}
 public enum ActorType { Wolf, Pig1, Pig2, Pig3, Director, Constructor }

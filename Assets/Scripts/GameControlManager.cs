@@ -22,6 +22,9 @@ public class GameControlManager : MonoBehaviour {
   private bool gameStarted = false;
   private bool tutorialShown;
 
+	public AudioSource startAudio;
+	public AudioSource endAudio;
+
   public delegate void GameStartEventHandler ();
   public event GameStartEventHandler OnGameStart = delegate {};
 
@@ -39,6 +42,7 @@ public class GameControlManager : MonoBehaviour {
 	}
 
   void Start () {
+		startAudio.Play();
     LifeController.Instance.OnGameOver += OnGameOver;
     TimeManager.Instance.OnGameFinished += OnGameFinished;
     tutorialShown = PlayerPrefs.GetInt("tutorial", 0) == 1;
@@ -75,20 +79,21 @@ public class GameControlManager : MonoBehaviour {
   }
 
   public void OnGameOver () {
+		endAudio.Play();
     curtineController.CloseCurtine();
     TimeManager.Instance.StopTime();
-    StartCoroutine(WaitAndReload());
+    StartCoroutine(WaitAndReload(0));
   }
 
   public void OnGameFinished () {
     TimeManager.Instance.StopTime();
-    curtineController.CloseCurtine();
-    StartCoroutine(WaitAndReload());
+    StartCoroutine(WaitAndReload(1));
   }
 
-  private IEnumerator WaitAndReload () {
+	private IEnumerator WaitAndReload (int sceneIndex) {
+		
     yield return new WaitForSeconds(3);
-    SceneManager.LoadScene(0);
+		SceneManager.LoadScene(sceneIndex);
   }
 
 }

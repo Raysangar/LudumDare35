@@ -1152,6 +1152,21 @@ MonoBehaviour:
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
+  - Name: Action 77
+    ExecuteTime: 87.55
+    Actor: 4
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 3
+    TypeOfSound: 7
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Action 76
     ExecuteTime: 87.6
     Actor: 0
@@ -2487,6 +2502,21 @@ MonoBehaviour:
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
     ActionsOfCurtine: 1
+  - Name: Action 167
+    ExecuteTime: 222
+    Actor: 4
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 10
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Action 127
     ExecuteTime: 1016
     Actor: 1

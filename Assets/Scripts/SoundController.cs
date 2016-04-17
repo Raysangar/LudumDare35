@@ -40,7 +40,7 @@ public class SoundController : MonoBehaviour {
 			GameObject go 		= new GameObject ("Audio");
 			sourceMusic 		= go.AddComponent<AudioSource>();
 			sourceMusic.volume 	= 1.0f;
-			sourceMusic.loop 	= false;
+			sourceMusic.loop 	= true;
 		}
 
 		switch (trackNumber){

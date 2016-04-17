@@ -105,6 +105,9 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.EndAction:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<EndActionController>().ActivateAttenuate();
 					break;
+				case ActionType.Credits:
+					GameControlManager.Instance.OnGameFinished();
+					break;
 				default:
 					break;
 				}

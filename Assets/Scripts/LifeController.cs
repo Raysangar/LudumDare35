@@ -20,6 +20,8 @@ public class LifeController : MonoBehaviour {
 
   private int currentLife;
 
+	private bool gameOverLaunched = false;
+
   private static LifeController instance;
 
   public delegate void GameOverEventHandler();
@@ -61,7 +63,9 @@ public class LifeController : MonoBehaviour {
 
   private void decreaseLife (int lifeDecresed) {
     currentLife -= lifeDecresed;
-    if (currentLife <= 0)
-      OnGameOver();
+		if (currentLife <= 0 && !gameOverLaunched){
+	      OnGameOver();
+		  gameOverLaunched = true;
+		}
   }
 }

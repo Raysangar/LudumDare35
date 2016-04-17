@@ -9,7 +9,7 @@ public class ConstructController : MonoBehaviour {
 
 	public Transform housePosition;
 
-	private GameObject actualHouse;
+	public GameObject actualHouse;
 
 	public void InstantianteCardboardHouse(){
 		actualHouse = (GameObject) Instantiate(CardboardHouse, housePosition.position, CardboardHouse.transform.rotation);
@@ -23,6 +23,10 @@ public class ConstructController : MonoBehaviour {
 
 	public void CleanHouses(){
 		Destroy(actualHouse);
+	}
+
+	public void CloseDoor(){
+		actualHouse.GetComponent<AnimController>().CloseDoor();
 	}
 
 	public void ConstructHouseByType(BuildType type){

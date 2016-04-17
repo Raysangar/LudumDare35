@@ -10,10 +10,10 @@ public class ConstructController : MonoBehaviour {
 	public Transform housePosition;
 
 	public void InstantianteCardboardHouse(){
-		Instantiate(CardboardHouse, housePosition.position, Quaternion.identity);
+		Instantiate(CardboardHouse, housePosition.position, CardboardHouse.transform.rotation);
 	}
 	public void InstantianteWoodHouse(){
-		Instantiate(WoodHouse, housePosition.position, Quaternion.identity);
+		Instantiate(WoodHouse, housePosition.position, WoodHouse.transform.rotation);
 	}
 	public void InstantianteBrickHouse(){
 		Instantiate(BrickHouse, housePosition.position, Quaternion.identity);

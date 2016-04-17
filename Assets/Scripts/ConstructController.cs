@@ -16,7 +16,7 @@ public class ConstructController : MonoBehaviour {
 		Instantiate(WoodHouse, housePosition.position, WoodHouse.transform.rotation);
 	}
 	public void InstantianteBrickHouse(){
-		Instantiate(BrickHouse, housePosition.position, Quaternion.identity);
+		Instantiate(BrickHouse, housePosition.position, BrickHouse.transform.rotation);
 	}
 
 	public void ConstructHouseByType(BuildType type){

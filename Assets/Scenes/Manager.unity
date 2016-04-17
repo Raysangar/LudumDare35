@@ -567,7 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardboardHouse: {fileID: 137180, guid: 281818ca85b6d45f6b92f8c75a8e94ac, type: 2}
   WoodHouse: {fileID: 126588, guid: c8ad9c1dbbbdc4866ba4fb34f842a8d9, type: 2}
-  BrickHouse: {fileID: 0}
+  BrickHouse: {fileID: 149390, guid: f8c42c3941c7f428399116c30303621a, type: 2}
   housePosition: {fileID: 2063284441}
 --- !u!114 &267306998
 MonoBehaviour:
@@ -3147,7 +3147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1840351592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3175,7 +3175,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8967645ccf34e4aa1a2a39a3be980f4c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1840351593

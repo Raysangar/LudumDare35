@@ -81,9 +81,9 @@ public class ActionManager : MonoBehaviour {
 					break;
 				case ActionType.Curtine:
 					if(ActionList.Actions[index].ActionsOfCurtine == CurtineActions.Close){
-						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().OpenCurtine();
-					} else {
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().CloseCurtine();
+					} else {
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().OpenCurtine();
 					}
 					break;
 				default:

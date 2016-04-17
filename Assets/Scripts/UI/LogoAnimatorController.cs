@@ -19,7 +19,7 @@ public class LogoAnimatorController : MonoBehaviour {
   }
 	
   public void OnPlay () {
-    animator.CrossFade("LogoFadeOut", 0);
+    animator.CrossFade("FadeOut", 0);
   }
 
 }

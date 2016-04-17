@@ -13,20 +13,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Actions:
   - Name: Test
-    ExecuteTime: 0
-    Actor: 5
+    ExecuteTime: 4
+    Actor: 4
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
     IsPlayable: 0
     RotationDegrees: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
-    TypeOfAction: 6
+    TypeOfAction: 7
     TypeOfSound: 0
     UIActionList: {fileID: 0}
-    TypeOfBuild: 1
-    ActionsOfCurtine: 0
-  - Name: Action 2
-    ExecuteTime: 1000
+    TypeOfBuild: 0
+    ActionsOfCurtine: 1
+  - Name: Test
+    ExecuteTime: 200
     Actor: 0
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}

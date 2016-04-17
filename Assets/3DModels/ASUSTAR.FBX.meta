@@ -69,7 +69,77 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CHARACTER_
+        weight: 1
+      - path: CHARACTER_Hub001
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_LLeg1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_LLeg1/CHARACTER_LLeg2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_RLeg1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_RLeg1/CHARACTER_RLeg2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_Hub002Bone001
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1/CHARACTER_LArm2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_LArmCollarbone/CHARACTER_LArm1/CHARACTER_LArm2/CHARACTER_LArmPalm
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1/CHARACTER_RArm2
+        weight: 1
+      - path: CHARACTER_Hub001/CHARACTER_Spine1/CHARACTER_Spine2/CHARACTER_Hub002/CHARACTER_RArmCollarbone/CHARACTER_RArm1/CHARACTER_RArm2/CHARACTER_RArmPalm
+        weight: 1
+      - path: CHARACTER_LLegPlatform
+        weight: 1
+      - path: CHARACTER_RLegPlatform
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

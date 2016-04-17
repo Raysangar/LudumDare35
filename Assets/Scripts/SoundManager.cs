@@ -62,6 +62,7 @@ public class SoundManager : MonoBehaviour {
   private IEnumerator fadeAmbient () {
     while (ambient.volume > 0) {
       yield return 0;
+      ambient.volume -= Time.deltaTime/2;
     }
     ambient.Stop();
   }

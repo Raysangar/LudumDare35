@@ -69,7 +69,7 @@ MonoBehaviour:
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 5
-    ExecuteTime: 5.6
+    ExecuteTime: 5.51
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 6
-    ExecuteTime: 5.7
+    ExecuteTime: 6
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}

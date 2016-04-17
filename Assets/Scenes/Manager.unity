@@ -665,6 +665,7 @@ GameObject:
   - 4: {fileID: 96164413}
   - 114: {fileID: 96164412}
   - 114: {fileID: 96164411}
+  - 114: {fileID: 96164414}
   m_Layer: 0
   m_Name: Director
   m_TagString: Director
@@ -722,6 +723,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1354885095}
   m_RootOrder: 4
+--- !u!114 &96164414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96164410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aaaf0fbeacd345e1b68a8e0bec35f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightsToAttenuate:
+  - {fileID: 695802300}
+  - {fileID: 948657124}
+  - {fileID: 288371114}
+  attenuationValue: 3
+  materials: []
 --- !u!1 &102074955
 GameObject:
   m_ObjectHideFlags: 0
@@ -7743,6 +7761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &543764117
 Animator:
   serializedVersion: 3
@@ -8583,6 +8602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &693402478
 Animator:
   serializedVersion: 3
@@ -9149,12 +9169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 687480149}
   m_RootOrder: 0
---- !u!114 &764904262 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11469154, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1980564647}
-  m_Script: {fileID: 11500000, guid: 5813ce02017af4b68a85ca8babf883e9, type: 3}
 --- !u!1 &767946180
 GameObject:
   m_ObjectHideFlags: 0
@@ -11141,6 +11155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1157897942
 Animator:
   serializedVersion: 3
@@ -11707,6 +11722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1207166316
 Animator:
   serializedVersion: 3
@@ -15719,6 +15735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1600399960
 Animator:
   serializedVersion: 3
@@ -17727,6 +17744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1715253774
 Animator:
   serializedVersion: 3
@@ -17947,6 +17965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1761976483
 Animator:
   serializedVersion: 3
@@ -18030,7 +18049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404694, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
@@ -18558,7 +18577,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 403290, guid: 2824fd35542ed4da6bc094945f496bcb, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 13769362, guid: 2824fd35542ed4da6bc094945f496bcb, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -19189,9 +19208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curtineController: {fileID: 96164411}
   focusController: {fileID: 1829471644}
-  tutorial: {fileID: 764904262}
-  TimeToInit: 162.5
-  indexAction: 129
+  tutorials: []
+  TimeToInit: 0
+  indexAction: 0
 --- !u!114 &1912308281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19528,7 +19547,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460988, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478250, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478656, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468858, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459406, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22470920, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493102, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fa1aa0a753b343468cae9f23e3bcfb8, type: 2}

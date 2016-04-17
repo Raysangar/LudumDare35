@@ -43,6 +43,7 @@ public class InputController : MonoBehaviour {
   }
 
   public void OnActionClicked (string buttonName) {
+		Debug.Log("FJDOSJODS");
     onActionTriggered(actionsDictionary[buttonName]);
   }
 

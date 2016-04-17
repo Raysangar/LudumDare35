@@ -102,6 +102,9 @@ public class ActionManager : MonoBehaviour {
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<CurtineController>().OpenCurtine();
 					}
 					break;
+				case ActionType.EndAction:
+					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<EndActionController>().ActivateAttenuate();
+					break;
 				default:
 					break;
 				}

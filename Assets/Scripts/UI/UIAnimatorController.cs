@@ -5,6 +5,7 @@ public class UIAnimatorController : MonoBehaviour {
 
   RectTransform recTransform;
   Animator animator;
+  private bool uiShown = false;
 
 	void Start () {
     recTransform = GetComponent<RectTransform>();
@@ -14,6 +15,7 @@ public class UIAnimatorController : MonoBehaviour {
   void OnEnable () {
     LifeController.Instance.OnGameOver += OnGameOver;
     GameControlManager.Instance.OnGameStart += OnPlay;
+    GameControlManager.Instance.OnGameAwake += OnPlay;
     TimeManager.Instance.OnGameFinished += OnGameFinished;
   }
 
@@ -21,17 +23,23 @@ public class UIAnimatorController : MonoBehaviour {
     LifeController.Instance.OnGameOver -= OnGameOver;
     TimeManager.Instance.OnGameFinished -= OnGameFinished;
     GameControlManager.Instance.OnGameStart -= OnPlay;
+    GameControlManager.Instance.OnGameAwake -= OnPlay;
   }
 	
   public void OnPlay () {
-    animator.CrossFade("ShowUI", 0);
+    if (!uiShown) {
+      animator.CrossFade("ShowUI", 0);
+      uiShown = true;
+    }
   }
 
   public void OnGameOver () {
     animator.CrossFade("HideUI", 0);
+    uiShown = false;
   }
 
   public void OnGameFinished () {
     animator.CrossFade("HideUI", 0);
+    uiShown = false;
   }
 }

@@ -11,15 +11,22 @@ public class GameControlManager : MonoBehaviour {
   private FocusController focusController;
 
   [SerializeField]
+  private TutorialController tutorial;
+
+  [SerializeField]
   private float TimeToInit;
 
 	[SerializeField]
 	private int indexAction;
 
   private bool gameStarted = false;
+  private bool tutorialShown;
 
   public delegate void GameStartEventHandler ();
   public event GameStartEventHandler OnGameStart = delegate {};
+
+  public delegate void OnGameAwakeEventHandler ();
+  public event OnGameAwakeEventHandler OnGameAwake = delegate {};
 
   private static GameControlManager instance;
 
@@ -28,12 +35,14 @@ public class GameControlManager : MonoBehaviour {
   }
 
 	void Awake(){
+    PlayerPrefs.DeleteAll();
 		instance = this;
 	}
 
   void Start () {
     LifeController.Instance.OnGameOver += OnGameOver;
     TimeManager.Instance.OnGameFinished += OnGameFinished;
+    tutorialShown = PlayerPrefs.GetInt("tutorial", 0) == 1;
   }
 
   void Update () {
@@ -46,11 +55,21 @@ public class GameControlManager : MonoBehaviour {
   public void StartGame () {
     curtineController.OpenCurtine();
 	focusController.StopFocus();
-#if TEST
-		TimeManager.Instance.InitTimeAt(TimeToInit,indexAction);
-#else
-	TimeManager.Instance.InitTime();
-#endif
+    if (tutorialShown) {
+      OnStart();
+    } else {
+      OnGameAwake();
+      tutorial.ShowTutorial();
+      tutorial.OnTutorialHidden += OnStart;
+    }
+  }
+
+  public void OnStart () {
+    #if TEST
+    TimeManager.Instance.InitTimeAt(TimeToInit,indexAction);
+    #else
+    TimeManager.Instance.InitTime();
+    #endif
     OnGameStart();
   }
 

@@ -7231,7 +7231,7 @@ Animator:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761976480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9e820669b6e174c92a88784b6ebbc067, type: 2}
   m_CullingMode: 0
@@ -7311,6 +7311,23 @@ Transform:
   - {fileID: 863949992}
   m_Father: {fileID: 507728163}
   m_RootOrder: 1
+--- !u!1 &1782389338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 112408, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+  m_PrefabInternal: {fileID: 1899183627}
+--- !u!114 &1782389345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782389338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6217a87dcf24cf1879af1ede782bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftRunParticles: {fileID: 0}
+  rightRunParticles: {fileID: 0}
 --- !u!1 &1788018383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8158,7 +8175,32 @@ Prefab:
       propertyPath: Boo00
       value: 
       objectReference: {fileID: 8300000, guid: bbd98f3e461364047a59f8e9ab8089b1, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 11450158, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: animatorParticles
+      value: 
+      objectReference: {fileID: 9587304, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+    - target: {fileID: 11450158, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+    - target: {fileID: 11404536, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+    - target: {fileID: 11417942, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 169020, guid: 48a6efd84212749cf8ec8deb83894190, type: 2}
+    - target: {fileID: 11450158, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: scaleFactor
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417942, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
+      propertyPath: scaleFactor
+      value: 0.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11409432, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8571c773a91f14ae6845e48ab36c3567, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1912131578

@@ -49,6 +49,7 @@ public class InputController : MonoBehaviour {
   private void onActionTriggered (UI.ActionType actionType) {
     if (UI.EventManager.Instance.CheckEventMatches(actionType)) {
       lifeController.OnEventSuccess();
+      soundManager.PlayCorrectInputFeedback();
     } else {
       lifeController.OnEventFailed();
       soundManager.PlayBoo();

@@ -1258,6 +1258,20 @@ MonoBehaviour:
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
     ActionsOfCurtine: 1
+  - Name: Action 90
+    ExecuteTime: 105
+    Actor: 4
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 7
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
   - Name: Action 2
     ExecuteTime: 1004
     Actor: 0

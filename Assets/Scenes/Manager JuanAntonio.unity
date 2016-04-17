@@ -10631,6 +10631,8 @@ GameObject:
   - 4: {fileID: 1026962132}
   - 114: {fileID: 1026962134}
   - 114: {fileID: 1026962133}
+  - 114: {fileID: 1026962135}
+  - 114: {fileID: 1026962136}
   m_Layer: 0
   m_Name: Constructor
   m_TagString: Constructor
@@ -10682,6 +10684,38 @@ MonoBehaviour:
   WoodHouse: {fileID: 126588, guid: c8ad9c1dbbbdc4866ba4fb34f842a8d9, type: 2}
   BrickHouse: {fileID: 149390, guid: f8c42c3941c7f428399116c30303621a, type: 2}
   housePosition: {fileID: 1783264338}
+  actualHouse: {fileID: 0}
+--- !u!114 &1026962135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026962131}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  ignoreTimescale: 0
+  isMoving: 0
+  stopPosition: {fileID: 0}
+--- !u!114 &1026962136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026962131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbebdfe03d024abcaef42e30688272d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032934853
 GameObject:
   m_ObjectHideFlags: 0
@@ -14986,6 +15020,7 @@ MonoBehaviour:
     IsPlayable: 0
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
@@ -19171,8 +19206,8 @@ MonoBehaviour:
   - {fileID: 751948720}
   - {fileID: 346429587}
   - {fileID: 2133380424}
-  TimeToInit: 65.5
-  indexAction: 55
+  TimeToInit: 100
+  indexAction: 88
 --- !u!114 &1912308281
 MonoBehaviour:
   m_ObjectHideFlags: 0

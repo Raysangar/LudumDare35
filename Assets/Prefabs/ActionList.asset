@@ -1397,14 +1397,14 @@ MonoBehaviour:
     Actor: 4
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
-    IsPlayable: 0
+    IsPlayable: 1
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
     MoveFirst: 0
     TypeOfAnimation: 0
     TypeOfAction: 7
     TypeOfSound: 0
-    UIActionList: {fileID: 0}
+    UIActionList: {fileID: 11400000, guid: 995adae5c54ef454a96e524f0c74509b, type: 2}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 92
@@ -1427,14 +1427,14 @@ MonoBehaviour:
     Actor: 0
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 450068, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    IsPlayable: 0
+    IsPlayable: 1
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
     MoveFirst: 0
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
-    UIActionList: {fileID: 0}
+    UIActionList: {fileID: 11400000, guid: 42534c6df8c4448e5ab48ae679b2588d, type: 2}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 95
@@ -1457,14 +1457,14 @@ MonoBehaviour:
     Actor: 0
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
-    IsPlayable: 0
+    IsPlayable: 1
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
     MoveFirst: 0
     TypeOfAnimation: 5
     TypeOfAction: 1
     TypeOfSound: 0
-    UIActionList: {fileID: 0}
+    UIActionList: {fileID: 11400000, guid: 5191827b626ee456e8dd84ebd3e0731f, type: 2}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 97
@@ -1682,14 +1682,14 @@ MonoBehaviour:
     Actor: 4
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}
-    IsPlayable: 0
+    IsPlayable: 1
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
     MoveFirst: 0
     TypeOfAnimation: 0
     TypeOfAction: 7
     TypeOfSound: 0
-    UIActionList: {fileID: 0}
+    UIActionList: {fileID: 11400000, guid: c97f3fa0870464254b05482800de7556, type: 2}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 112
@@ -1697,14 +1697,14 @@ MonoBehaviour:
     Actor: 1
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 462954, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
-    IsPlayable: 0
+    IsPlayable: 1
     RotationDegrees: {x: 0, y: 0, z: 0}
     Movement: {x: 0, y: 0, z: 0}
     MoveFirst: 0
     TypeOfAnimation: 0
     TypeOfAction: 0
     TypeOfSound: 0
-    UIActionList: {fileID: 0}
+    UIActionList: {fileID: 11400000, guid: da1415fef58f74668a056f0c78ee3acc, type: 2}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
   - Name: Action 113

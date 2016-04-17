@@ -17,16 +17,16 @@ MonoBehaviour:
     offset: 1
     actionType: 0
   - width: 0.2
-    offset: 0.2
+    offset: 0.3
     actionType: 0
   - width: 0.2
-    offset: 0.1
+    offset: 0.3
     actionType: 1
   - width: 0.22
-    offset: 0.1
+    offset: 0.2
     actionType: 1
   - width: 0.3
-    offset: 0.1
+    offset: 0.15
     actionType: 0
   - width: 0.3
     offset: 0.3

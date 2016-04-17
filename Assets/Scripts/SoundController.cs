@@ -27,6 +27,7 @@ public class SoundController : MonoBehaviour {
 		source.clip 	= clip;
 		source.volume 	= 1.0f;
 		source.loop 	= false;
+		source.Play();
 
 		Destroy(go,source.clip.length);
 	}

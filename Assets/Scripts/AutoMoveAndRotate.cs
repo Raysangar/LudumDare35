@@ -30,7 +30,12 @@ namespace UnityStandardAssets.Utility
 					deltaTime = (Time.realtimeSinceStartup - m_LastRealTime);
 					m_LastRealTime = Time.realtimeSinceStartup;
 				}
-				transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
+//				transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
+				if(Vector3.Distance(transform.position, stopPosition.position) > 0.1)
+				{
+					transform.LookAt(stopPosition.transform);
+				}
+				transform.position += (stopPosition.position - transform.position).normalized * Time.deltaTime;
 				if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Rotate){
 					transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
 				}

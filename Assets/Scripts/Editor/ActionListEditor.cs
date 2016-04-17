@@ -115,6 +115,7 @@ public class ActionListEditor : EditorWindow {
 				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Move){
 					inventoryItemList.Actions[viewIndex-1].EffectPosition = EditorGUILayout.ObjectField ("Start Position", inventoryItemList.Actions[viewIndex-1].EffectPosition, typeof (Transform), false) as Transform;
 					inventoryItemList.Actions[viewIndex-1].EndPosition = EditorGUILayout.ObjectField ("End Position", inventoryItemList.Actions[viewIndex-1].EndPosition, typeof (Transform), false) as Transform;
+					inventoryItemList.Actions[viewIndex-1].Movement = EditorGUILayout.Vector3Field ("Movement", inventoryItemList.Actions[viewIndex-1].Movement, GUILayout.ExpandWidth(false));
 				}
 
 				if(inventoryItemList.Actions[viewIndex-1].TypeOfAction == ActionType.Rotate){

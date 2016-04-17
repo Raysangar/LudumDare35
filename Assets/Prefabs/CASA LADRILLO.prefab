@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3353094}
   - 23: {fileID: 2339482}
   - 95: {fileID: 9579372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CASA LADRILLO
   m_TagString: Untagged
   m_Icon: {fileID: 0}

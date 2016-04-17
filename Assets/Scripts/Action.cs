@@ -12,6 +12,7 @@ public class Action {
 	public Transform EndPosition;
 	public bool IsPlayable;
 	public Vector3 RotationDegrees;
+	public Vector3 Movement;
 
 	public AnimationType TypeOfAnimation;
 	public ActionType TypeOfAction;

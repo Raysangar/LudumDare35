@@ -5,6 +5,8 @@ public class TutorialController : MonoBehaviour {
 
   Animator animator;
   private bool tutorialShown = false; 
+
+
  
   public delegate void TutorialHiddenEventHandler();
   public event TutorialHiddenEventHandler OnTutorialHidden = delegate{};

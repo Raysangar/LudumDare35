@@ -11,7 +11,7 @@ public class GameControlManager : MonoBehaviour {
   private FocusController focusController;
 
   [SerializeField]
-  private TutorialController tutorial;
+  private TutorialController[] tutorials;
 
   [SerializeField]
   private float TimeToInit;
@@ -35,7 +35,6 @@ public class GameControlManager : MonoBehaviour {
   }
 
 	void Awake(){
-    PlayerPrefs.DeleteAll();
 		instance = this;
 	}
 
@@ -59,8 +58,10 @@ public class GameControlManager : MonoBehaviour {
       OnStart();
     } else {
       OnGameAwake();
-      tutorial.ShowTutorial();
-      tutorial.OnTutorialHidden += OnStart;
+      foreach (TutorialController tutorial in tutorials) {
+        tutorial.ShowTutorial();
+      }
+      tutorials[0].OnTutorialHidden += OnStart;
     }
   }
 

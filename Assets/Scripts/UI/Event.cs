@@ -41,6 +41,7 @@ namespace UI {
     private void setInitPosition (float initPosition) {
       Vector3 position = Vector3.zero;
       position.x = initPosition;
+      position.y = 3;
       eventTransform.localPosition = position;
     }
 

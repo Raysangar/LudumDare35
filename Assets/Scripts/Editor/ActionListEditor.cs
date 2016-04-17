@@ -7,6 +7,7 @@ public class ActionListEditor : EditorWindow {
 
 	public ActionList inventoryItemList;
 	private int viewIndex = 1;
+	private float secondsToDelay = 0.0f;
 
 	[MenuItem ("Window/Action List Editor %#e")]
 	static void  Init () 
@@ -103,6 +104,13 @@ public class ActionListEditor : EditorWindow {
 				Debug.Log("wtf");
 			if (inventoryItemList.Actions.Count > 0) 
 			{
+				GUILayout.BeginHorizontal ();
+				secondsToDelay = EditorGUILayout.FloatField ("Delay X Seconds All Actions", secondsToDelay, GUILayout.ExpandWidth(false));
+				if (GUILayout.Button("Add X Secs to all Actions from here", GUILayout.ExpandWidth(false))) 
+				{
+					AddSeconds(viewIndex - 1);
+				}
+				GUILayout.EndHorizontal ();
 				GUILayout.BeginHorizontal ();
 				viewIndex = Mathf.Clamp (EditorGUILayout.IntField ("Current Item", viewIndex, GUILayout.ExpandWidth(false)), 1, inventoryItemList.Actions.Count);
 				//Mathf.Clamp (viewIndex, 1, inventoryItemList.itemList.Count);
@@ -203,8 +211,16 @@ public class ActionListEditor : EditorWindow {
 	void AddActionAtPosition(int index){
 		Action action = new Action();
 		action.Name = "Action " + (index + 2);
+		action.ExecuteTime = inventoryItemList.Actions[index].ExecuteTime;
+		action.Actor = inventoryItemList.Actions[index].Actor;
 		inventoryItemList.Actions.Insert(index + 1, action);
 		viewIndex = index + 2;
+	}
+
+	void AddSeconds(int index){
+		for (int i = index + 1; i < inventoryItemList.Actions.Count; i++) {
+			inventoryItemList.Actions[i].ExecuteTime += secondsToDelay;
+		}
 	}
 
 	void DeleteItem (int index) 

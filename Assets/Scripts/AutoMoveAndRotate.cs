@@ -31,11 +31,12 @@ namespace UnityStandardAssets.Utility
 					m_LastRealTime = Time.realtimeSinceStartup;
 				}
 //				transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
-				if(Vector3.Distance(transform.position, stopPosition.position) > 0.1)
+				if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Move)
 				{
 					transform.LookAt(stopPosition.transform);
+					transform.position += (stopPosition.position - transform.position).normalized * Time.deltaTime;
 				}
-				transform.position += (stopPosition.position - transform.position).normalized * Time.deltaTime;
+
 				if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Rotate){
 					transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
 				}

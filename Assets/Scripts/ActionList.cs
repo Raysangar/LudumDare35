@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEditor;
+//using UnityEditor;
 
 public class ActionList : ScriptableObject {
 

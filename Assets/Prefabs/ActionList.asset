@@ -22,7 +22,7 @@ MonoBehaviour:
     Movement: {x: 0, y: 0, z: 0}
     TypeOfAnimation: 0
     TypeOfAction: 3
-    TypeOfSound: 8
+    TypeOfSound: 6
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
@@ -558,6 +558,216 @@ MonoBehaviour:
     UIActionList: {fileID: 0}
     TypeOfBuild: 0
     ActionsOfCurtine: 0
+  - Name: Action 40
+    ExecuteTime: 47.6
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 100, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 5
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 41
+    ExecuteTime: 48.5
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 4
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 42
+    ExecuteTime: 48.6
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 2
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 43
+    ExecuteTime: 48.65
+    Actor: 4
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 3
+    TypeOfSound: 1
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 44
+    ExecuteTime: 48.7
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 4
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 45
+    ExecuteTime: 50
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 46
+    ExecuteTime: 50.05
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: -100, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 5
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 47
+    ExecuteTime: 51.25
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 48
+    ExecuteTime: 51.35
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 432570, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 49
+    ExecuteTime: 53.85
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 4
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 50
+    ExecuteTime: 54
+    Actor: 5
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 2
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 51
+    ExecuteTime: 54.1
+    Actor: 5
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 6
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 2
+    ActionsOfCurtine: 0
+  - Name: Action 52
+    ExecuteTime: 56
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 53
+    ExecuteTime: 56.1
+    Actor: 3
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 53
+    ExecuteTime: 56.1
+    Actor: 4
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 470874, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    TypeOfAnimation: 0
+    TypeOfAction: 7
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 1
   - Name: Action 2
     ExecuteTime: 1000
     Actor: 0

@@ -13,6 +13,7 @@ public class Action {
 	public bool IsPlayable;
 	public Vector3 RotationDegrees;
 	public Vector3 Movement;
+	public bool MoveFirst;
 
 	public AnimationType TypeOfAnimation;
 	public ActionType TypeOfAction;
@@ -26,5 +27,5 @@ public enum ActionType { Move, PlayAnimation, PlayParticle, PlaySound, ChangeCos
 public enum BuildType {Cardboard, Wood, Brick}
 public enum CurtineActions {Open, Close}
 public enum ActorType { Wolf, Pig1, Pig2, Pig3, Director, Constructor }
-public enum AnimationType {Walk, Run, Afraid, Death, Idle, Blow, Arbol, Asustados, ArbolReves}
+public enum AnimationType {Walk, Run, Afraid, Death, Idle, Blow, Arbol, Asustados, ArbolReves, CloseDoor}
 public enum SoundType {Laugh, SmokeBomb, Clap00, Clap01, Boo00, Boo01, Act01Track, Act02Track, Act03Track, WolfScare, WolfBlow, PigYell, PigLaugh, House}

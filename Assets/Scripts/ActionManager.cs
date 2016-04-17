@@ -56,9 +56,13 @@ public class ActionManager : MonoBehaviour {
 				ActionsState[index] = true;
 				switch (ActionList.Actions[index].TypeOfAction){
 				case ActionType.Move:
-					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
-					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = true;
-					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().stopPosition = ActionList.Actions[index].EndPosition;
+					if(!ActionList.Actions[index].MoveFirst){
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = true;
+						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().stopPosition = ActionList.Actions[index].EndPosition;
+					} else {
+						GetActorOfType(ActionList.Actions[index].Actor).transform.position = ActionList.Actions[index].EffectPosition.position;
+					}
 					break;
 				case ActionType.Rotate:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;

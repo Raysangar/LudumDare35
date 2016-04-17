@@ -14,19 +14,19 @@ MonoBehaviour:
   difficulty: 5
   actionList:
   - width: 0.3
-    offset: 0
+    offset: 0.1
     actionType: 3
   - width: 0.3
-    offset: 0.1
+    offset: 0.25
     actionType: 0
   - width: 0.3
     offset: 0.3
     actionType: 1
   - width: 0.3
-    offset: 0.1
+    offset: 0.2
     actionType: 0
   - width: 0.3
-    offset: 0.1
+    offset: 0.2
     actionType: 3
   - width: 0.3
     offset: 0.3

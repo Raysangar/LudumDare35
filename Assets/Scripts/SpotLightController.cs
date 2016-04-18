@@ -6,6 +6,8 @@ public class SpotLightController : MonoBehaviour {
 	private Transform target;
 	private Light light;
 
+	public ActorType ActorToFollow;
+
 	void Awake(){
 		light = GetComponent<Light>();
 	}
@@ -28,11 +30,41 @@ public class SpotLightController : MonoBehaviour {
 
 	void OnActionLaunchedCallback(int index){
 		if(index < ActionManager.Instance.ActionList.Actions.Count){
-			if(ActionManager.Instance.ActionList.Actions[index].Actor != null && ActionManager.Instance.ActionList.Actions[index].TypeOfAction == ActionType.Move)
+			if(ActionManager.Instance.ActionList.Actions[index].Actor != null && IsActionForFocus(ActionManager.Instance.ActionList.Actions[index].TypeOfAction))
 			{
 				light.enabled = true;
-				target = ActionManager.Instance.GetActorOfType(ActionManager.Instance.ActionList.Actions[index].Actor).transform;
+				target = ActionManager.Instance.GetActorOfType(ActorToFollow).transform;
 			}
 		}
+	}
+
+	public bool IsActionForFocus(ActionType actionType){
+		switch (actionType){
+		case ActionType.Move:
+			return true;
+		case ActionType.Rotate:
+			return true;
+		case ActionType.ChangeCostume:
+			return true;
+		case ActionType.PlayParticle:
+			return false;
+		case ActionType.PlayAnimation:
+			return true;
+		case ActionType.PlaySound:
+			return false;
+		case ActionType.Build:
+			return false;
+		case ActionType.Clean:
+			return false;
+		case ActionType.Curtine:
+			return false;
+		case ActionType.EndAction:
+			return false;
+		case ActionType.Credits:
+			return false;
+		default:
+			break;
+		}
+		return false;
 	}
 }

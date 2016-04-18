@@ -13,10 +13,12 @@ namespace UnityStandardAssets.Utility
 		public bool isMoving;
 		public Transform stopPosition;
 
+		private Actor actor;
 
         void Start()
         {
             m_LastRealTime = Time.realtimeSinceStartup;
+			actor = GetComponent<Actor>();
 			isMoving = true;
         }
 
@@ -31,7 +33,7 @@ namespace UnityStandardAssets.Utility
 					m_LastRealTime = Time.realtimeSinceStartup;
 				}
 //				transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
-				if(ActionManager.Instance.CurrentAction.TypeOfAction == ActionType.Move)
+				if(actor.currentAction.TypeOfAction == ActionType.Move)
 				{
 					transform.LookAt(stopPosition.transform);
 					transform.position += (stopPosition.position - transform.position).normalized * Time.deltaTime;

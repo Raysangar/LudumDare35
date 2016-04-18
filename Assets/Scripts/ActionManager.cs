@@ -48,6 +48,7 @@ public class ActionManager : MonoBehaviour {
 	void OnActionLaunchedCallback(int index){
 		if(index < ActionList.Actions.Count){
 			CurrentAction = ActionList.Actions[index];
+			GetActorOfType(ActionList.Actions[index].Actor).GetComponent<Actor>().currentAction = ActionList.Actions[index];
 			if(ActionList.Actions[index].Actor != null)
 			{
 				if(ActionList.Actions[index].IsPlayable){
@@ -56,6 +57,7 @@ public class ActionManager : MonoBehaviour {
 				ActionsState[index] = true;
 				switch (ActionList.Actions[index].TypeOfAction){
 				case ActionType.Move:
+					
 					if(!ActionList.Actions[index].MoveFirst){
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().enabled = true;
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<AutoMoveAndRotate>().isMoving = true;
@@ -87,13 +89,12 @@ public class ActionManager : MonoBehaviour {
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().ConstructHouseByType(ActionList.Actions[index].TypeOfBuild);
 					break;
 				case ActionType.Clean:
-					if(GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>() != null){
+					if(ActionList.Actions[index].Actor == ActorType.Constructor){
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().CleanHouses();
-					}
-					if(GetActorOfType(ActionList.Actions[index].Actor).GetComponent<Actor>() != null){
+					} else {
+						
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<Actor>().CleanActor();
 					}
-
 					break;
 				case ActionType.Curtine:
 					if(ActionList.Actions[index].ActionsOfCurtine == CurtineActions.Close){

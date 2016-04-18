@@ -215,6 +215,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {fileID: 1799482878}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!114 &3259933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +682,7 @@ GameObject:
   - 114: {fileID: 96164412}
   - 114: {fileID: 96164411}
   - 114: {fileID: 96164414}
+  - 114: {fileID: 96164415}
   m_Layer: 0
   m_Name: Director
   m_TagString: Director
@@ -740,6 +757,34 @@ MonoBehaviour:
   - {fileID: 288371114}
   attenuationValue: 3
   materials: []
+--- !u!114 &96164415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96164410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbbdbcb9094d4711a86b633f15e5548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPosition: {fileID: 1799482878}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!1 &102074955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1098,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {fileID: 1799482878}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!114 &161225968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10641,6 +10702,7 @@ GameObject:
   - 114: {fileID: 1026962133}
   - 114: {fileID: 1026962135}
   - 114: {fileID: 1026962136}
+  - 114: {fileID: 1026962137}
   m_Layer: 0
   m_Name: Constructor
   m_TagString: Constructor
@@ -10724,6 +10786,34 @@ MonoBehaviour:
   ignoreTimescale: 0
   isMoving: 0
   stopPosition: {fileID: 472924, guid: 18c5cb45bf90a4985a02fac63f8b8e41, type: 2}
+--- !u!114 &1026962137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026962131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbbdbcb9094d4711a86b633f15e5548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPosition: {fileID: 1783264338}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!1 &1032934853
 GameObject:
   m_ObjectHideFlags: 0
@@ -14917,6 +15007,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {fileID: 1799482878}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!114 &1424536934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18982,6 +19088,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {fileID: 1799482878}
+  currentAction:
+    Name: 
+    ExecuteTime: 0
+    Actor: 0
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 0
+    TypeOfAction: 0
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
 --- !u!1 &1866032628
 GameObject:
   m_ObjectHideFlags: 0

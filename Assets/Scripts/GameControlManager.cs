@@ -14,10 +14,10 @@ public class GameControlManager : MonoBehaviour {
   private TutorialController[] tutorials;
 
   [SerializeField]
-  private float TimeToInit;
+  public float TimeToInit;
 
 	[SerializeField]
-	private int indexAction;
+	public int indexAction;
 
   private bool gameStarted = false;
   private bool tutorialShown;

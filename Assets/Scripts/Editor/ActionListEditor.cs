@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class ActionListEditor : EditorWindow {
 
@@ -156,7 +157,10 @@ public class ActionListEditor : EditorWindow {
 					inventoryItemList.Actions[viewIndex-1].TypeOfSound = (SoundType) EditorGUILayout.EnumPopup ("Type of Sound", inventoryItemList.Actions[viewIndex-1].TypeOfSound, GUILayout.ExpandWidth(false));
 				}
 				GUILayout.EndHorizontal ();
-
+				if (GUILayout.Button("Play From Here", GUILayout.ExpandWidth(false))) 
+				{
+					PlayFromHere(viewIndex - 1);
+				}
 				GUILayout.Space(10);
 
 			} 
@@ -228,4 +232,11 @@ public class ActionListEditor : EditorWindow {
 	{
 		inventoryItemList.Actions.RemoveAt (index);
 	}
+
+	void PlayFromHere(int index){
+		GameControlManager.Instance.TimeToInit = inventoryItemList.Actions[index].ExecuteTime;
+		GameControlManager.Instance.indexAction = index;
+
+	}
+
 }

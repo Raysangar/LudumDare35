@@ -23,21 +23,15 @@ MonoBehaviour:
     offset: 0.3
     actionType: 1
   - width: 0.3
-    offset: 0.3
+    offset: 0.5
     actionType: 3
   - width: 0.3
     offset: 0.3
     actionType: 0
   - width: 0.3
     offset: 0.4
-    actionType: 3
-  - width: 0.3
-    offset: 0.4
     actionType: 0
   - width: 0.3
-    offset: 0.4
-    actionType: 3
-  - width: 0.4
     offset: 0.4
     actionType: 3
   - width: 0.4

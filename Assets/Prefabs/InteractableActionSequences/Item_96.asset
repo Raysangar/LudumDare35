@@ -32,20 +32,8 @@ MonoBehaviour:
     offset: 0.3
     actionType: 0
   - width: 0.2
-    offset: 0.2
+    offset: 0.5
     actionType: 0
-  - width: 0.2
-    offset: 0.2
-    actionType: 3
-  - width: 0.2
-    offset: 0.2
-    actionType: 3
-  - width: 0.2
-    offset: 0.2
-    actionType: 3
-  - width: 0.2
-    offset: 0.2
-    actionType: 3
   - width: 0.2
     offset: 0.2
     actionType: 3

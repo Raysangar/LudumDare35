@@ -4555,6 +4555,12 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!114 &207154947 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11403980, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980564647}
+  m_Script: {fileID: 11500000, guid: 5813ce02017af4b68a85ca8babf883e9, type: 3}
 --- !u!1 &209833632
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,6 +7544,12 @@ Transform:
   - {fileID: 1245692620}
   m_Father: {fileID: 839539153}
   m_RootOrder: 0
+--- !u!114 &461024508 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11402308, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980564647}
+  m_Script: {fileID: 11500000, guid: 5813ce02017af4b68a85ca8babf883e9, type: 3}
 --- !u!1 &463753914
 GameObject:
   m_ObjectHideFlags: 0
@@ -15452,6 +15464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActionList: {fileID: 11400000, guid: 99986eb4ab64a4b0eb49f4b2d82a5c38, type: 2}
+  animatorController: {fileID: 1943157237}
   CurrentAction:
     Name: 
     ExecuteTime: 0
@@ -18277,6 +18290,12 @@ Transform:
   - {fileID: 396881713}
   m_Father: {fileID: 247008697}
   m_RootOrder: 2
+--- !u!114 &1733339730 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11491932, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980564647}
+  m_Script: {fileID: 11500000, guid: 5813ce02017af4b68a85ca8babf883e9, type: 3}
 --- !u!4 &1736463147 stripped
 Transform:
   m_PrefabParentObject: {fileID: 467540, guid: 3a4affd926dab4ff887bc30161df3675, type: 2}
@@ -18944,6 +18963,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1960293079}
   m_RootOrder: 0
+--- !u!114 &1848072034 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11469154, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980564647}
+  m_Script: {fileID: 11500000, guid: 5813ce02017af4b68a85ca8babf883e9, type: 3}
 --- !u!1 &1853924838
 GameObject:
   m_ObjectHideFlags: 0
@@ -19686,7 +19711,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curtineController: {fileID: 96164411}
   focusController: {fileID: 1829471644}
-  tutorials: []
+  tutorials:
+  - {fileID: 207154947}
+  - {fileID: 1848072034}
+  - {fileID: 461024508}
+  - {fileID: 1733339730}
   TimeToInit: 0
   indexAction: 0
   startAudio: {fileID: 1349744465}
@@ -19793,6 +19822,12 @@ Transform:
   - {fileID: 2128499564}
   m_Father: {fileID: 245602480}
   m_RootOrder: 0
+--- !u!114 &1943157237 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11471422, guid: 8fa1aa0a753b343468cae9f23e3bcfb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980564647}
+  m_Script: {fileID: 11500000, guid: 360185a2e2b90403f9483c3c1aeb2f89, type: 3}
 --- !u!1 &1950234008
 GameObject:
   m_ObjectHideFlags: 0

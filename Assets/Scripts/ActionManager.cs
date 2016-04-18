@@ -5,6 +5,7 @@ using UnityStandardAssets.Utility;
 public class ActionManager : MonoBehaviour {
 
 	public ActionList ActionList;
+  public UIAnimatorController animatorController;
 	public static ActionManager Instance;
 	private GameObject pig1;
 	private GameObject pig2;
@@ -88,6 +89,9 @@ public class ActionManager : MonoBehaviour {
 				case ActionType.Build:
 					GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().ConstructHouseByType(ActionList.Actions[index].TypeOfBuild);
 					break;
+        case ActionType.HideUI:
+            animatorController.HideUI();
+            break;
 				case ActionType.Clean:
 					if(ActionList.Actions[index].Actor == ActorType.Constructor){
 						GetActorOfType(ActionList.Actions[index].Actor).GetComponent<ConstructController>().CleanHouses();

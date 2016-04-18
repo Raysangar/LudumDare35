@@ -68,7 +68,7 @@ public class LifeController : MonoBehaviour {
     currentLife -= lifeDecresed;
 		if (currentLife <= 0 && !gameOverLaunched){
 	      OnGameOver();
-		  gameOverLaunched = true;
+		    gameOverLaunched = true;
 		}
   }
 }

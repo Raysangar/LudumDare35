@@ -20,10 +20,11 @@ public class ParticleController : MonoBehaviour {
 	public void ActivateParticle(){
 		
 		ResetParticles();
+
 		Transform trCamera = Camera.main.transform;
 		Vector3 direction = (trCamera.position - transform.position).normalized;
 
-		animatorParticles.transform.position = transform.position + (direction * 2);
+		animatorParticles.transform.position = transform.position + (direction * 1.5f);
 		animatorParticles.CrossFade("SmokeAnim", 0.0f);
 	}
 
@@ -31,5 +32,6 @@ public class ParticleController : MonoBehaviour {
 	public void ResetParticles(){
 		
 		particle00.enableEmission =  true;
+		animatorParticles.CrossFade("None", 0.0f);
 	}
 }

@@ -42,4 +42,9 @@ public class UIAnimatorController : MonoBehaviour {
     animator.CrossFade("HideUI", 0);
     uiShown = false;
   }
+
+  public void HideUI () {
+    animator.CrossFade("HideUI", 0);
+    uiShown = false;
+  }
 }

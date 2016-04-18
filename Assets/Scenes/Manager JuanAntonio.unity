@@ -704,12 +704,12 @@ MonoBehaviour:
   Boo01: {fileID: 0}
   Clap00: {fileID: 0}
   Clap01: {fileID: 0}
-  House: {fileID: 0}
-  PigLaugh: {fileID: 0}
-  PigYell: {fileID: 8300000, guid: bbd98f3e461364047a59f8e9ab8089b1, type: 3}
+  House: {fileID: 8300000, guid: afbf83fdff4cc4196b8903ea5dd5a480, type: 3}
+  PigLaugh: {fileID: 8300000, guid: 21078256fb18c4b5283d6edf594ab127, type: 3}
+  PigYell: {fileID: 8300000, guid: b4387364c09154bc2aab023564266431, type: 3}
   SmokeBomb: {fileID: 8300000, guid: e4de7e895a65f43aa997984329d360bb, type: 3}
-  WolfScare: {fileID: 8300000, guid: f1f18ce0b29da43858a531d8e59f57f8, type: 3}
-  WolfBlow: {fileID: 0}
+  WolfScare: {fileID: 8300000, guid: cddd7ec6f01414364accf10e60c43dd4, type: 3}
+  WolfBlow: {fileID: 8300000, guid: 5948ae73459164de1ac99e8b6093d765, type: 3}
 --- !u!4 &96164413
 Transform:
   m_ObjectHideFlags: 0
@@ -7749,6 +7749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &543764117
 Animator:
   serializedVersion: 3
@@ -8589,6 +8590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &693402478
 Animator:
   serializedVersion: 3
@@ -11147,6 +11149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1157897942
 Animator:
   serializedVersion: 3
@@ -11713,6 +11716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1207166316
 Animator:
   serializedVersion: 3
@@ -15725,6 +15729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1600399960
 Animator:
   serializedVersion: 3
@@ -17733,6 +17738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1715253774
 Animator:
   serializedVersion: 3
@@ -17953,6 +17959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b763c1ccdd44cd8b8063532b4835bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationToExecute: Idle
 --- !u!95 &1761976483
 Animator:
   serializedVersion: 3
@@ -19206,8 +19213,10 @@ MonoBehaviour:
   - {fileID: 751948720}
   - {fileID: 346429587}
   - {fileID: 2133380424}
-  TimeToInit: 100
-  indexAction: 88
+  TimeToInit: 0
+  indexAction: 0
+  startAudio: {fileID: 0}
+  endAudio: {fileID: 0}
 --- !u!114 &1912308281
 MonoBehaviour:
   m_ObjectHideFlags: 0

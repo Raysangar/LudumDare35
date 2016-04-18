@@ -46,7 +46,10 @@ public class LifeController : MonoBehaviour {
 
   public void OnEventSuccess () {
     Debug.Log("Success");
-    currentLife = (currentLife + eventSuccessReward) % maxLife;
+    currentLife += eventSuccessReward;
+    if (currentLife >= maxLife) {
+      currentLife = maxLife;
+    }
   }
 
   public void OnEventFailed () {

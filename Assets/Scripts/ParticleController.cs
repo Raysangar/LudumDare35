@@ -26,12 +26,19 @@ public class ParticleController : MonoBehaviour {
 
 		animatorParticles.transform.position = transform.position + (direction * 1.5f);
 		animatorParticles.CrossFade("SmokeAnim", 0.0f);
+
+		Invoke("ResetParticles2", 2.0f);
 	}
 
 	[ContextMenu("Reset Particle")]
 	public void ResetParticles(){
 		
 		particle00.enableEmission =  true;
+		animatorParticles.CrossFade("None", 0.0f);
+	}
+
+	private void ResetParticles2(){
+
 		animatorParticles.CrossFade("None", 0.0f);
 	}
 }

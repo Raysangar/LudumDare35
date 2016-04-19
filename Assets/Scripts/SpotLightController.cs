@@ -4,12 +4,12 @@ using System.Collections;
 public class SpotLightController : MonoBehaviour {
 
 	private Transform target;
-	private Light light;
+	private Light lightComponent;
 
 	public ActorType ActorToFollow;
 
 	void Awake(){
-		light = GetComponent<Light>();
+		lightComponent = GetComponent<Light>();
 	}
 
 	void OnEnable(){
@@ -30,9 +30,9 @@ public class SpotLightController : MonoBehaviour {
 
 	void OnActionLaunchedCallback(int index){
 		if(index < ActionManager.Instance.ActionList.Actions.Count){
-			if(ActionManager.Instance.ActionList.Actions[index].Actor != null && IsActionForFocus(ActionManager.Instance.ActionList.Actions[index].TypeOfAction))
+			if(IsActionForFocus(ActionManager.Instance.ActionList.Actions[index].TypeOfAction))
 			{
-				light.enabled = true;
+				lightComponent.enabled = true;
 				target = ActionManager.Instance.GetActorOfType(ActorToFollow).transform;
 			}
 		}

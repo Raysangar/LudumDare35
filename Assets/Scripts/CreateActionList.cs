@@ -9,13 +9,15 @@ public class CreateActionList {
 //	[MenuItem("Assets/Create/Action List")]
 	public static ActionList  Create()
 	{
-		#if UNITY_EDITOR
+#if UNITY_EDITOR
 		ActionList asset = ScriptableObject.CreateInstance<ActionList>();
 
 		AssetDatabase.CreateAsset(asset, "Assets/ActionList.asset");
 		AssetDatabase.SaveAssets();
 		return asset;
-		#endif
-		return null;
-	}
+#else
+      return null;
+#endif
+
+   }
 }

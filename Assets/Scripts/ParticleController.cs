@@ -32,8 +32,8 @@ public class ParticleController : MonoBehaviour {
 
 	[ContextMenu("Reset Particle")]
 	public void ResetParticles(){
-		
-		particle00.enableEmission =  true;
+      ParticleSystem.EmissionModule emissionModule = particle00.emission;
+      emissionModule.enabled = true;
 		animatorParticles.CrossFade("None", 0.0f);
 	}
 

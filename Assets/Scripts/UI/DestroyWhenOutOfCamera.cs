@@ -3,8 +3,6 @@ using System.Collections;
 
 public class DestroyWhenOutOfCamera : MonoBehaviour {
 
-  private float screenWidth;
-
   private RectTransform rectTransform;
 
   public delegate void OutsideOfCameraEventHandler(RectTransform rectTransform);
@@ -12,7 +10,6 @@ public class DestroyWhenOutOfCamera : MonoBehaviour {
 
   void Start () {
     rectTransform = GetComponent<RectTransform>();
-    screenWidth = Screen.width;
   }
 
   void FixedUpdate () {

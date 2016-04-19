@@ -3,12 +3,10 @@ using UnityEngine.UI;
 
 public class UIAnimatorController : MonoBehaviour {
 
-  RectTransform recTransform;
   Animator animator;
   private bool uiShown = false;
 
 	void Start () {
-    recTransform = GetComponent<RectTransform>();
     animator = GetComponent<Animator>();
 	}
 

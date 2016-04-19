@@ -30,7 +30,7 @@ GameObject:
   - 23: {fileID: 2379628}
   - 95: {fileID: 9591380}
   m_Layer: 8
-  m_Name: "CABAN\u0303A CARTON"
+  m_Name: "CABA\xD1A CARTON"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

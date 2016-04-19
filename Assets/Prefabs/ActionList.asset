@@ -2519,6 +2519,21 @@ MonoBehaviour:
     ActionsOfCurtine: 0
   - Name: Action 168
     ExecuteTime: 189
+    Actor: 1
+    EffectPosition: {fileID: 0}
+    EndPosition: {fileID: 0}
+    IsPlayable: 0
+    RotationDegrees: {x: 0, y: 0, z: 0}
+    Movement: {x: 0, y: 0, z: 0}
+    MoveFirst: 0
+    TypeOfAnimation: 4
+    TypeOfAction: 1
+    TypeOfSound: 0
+    UIActionList: {fileID: 0}
+    TypeOfBuild: 0
+    ActionsOfCurtine: 0
+  - Name: Action 168
+    ExecuteTime: 189
     Actor: 3
     EffectPosition: {fileID: 0}
     EndPosition: {fileID: 0}

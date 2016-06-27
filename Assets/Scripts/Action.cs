@@ -29,3 +29,4 @@ public enum CurtineActions {Open, Close}
 public enum ActorType { Wolf, Pig1, Pig2, Pig3, Director, Constructor }
 public enum AnimationType {Walk, Run, Afraid, Death, Idle, Blow, Arbol, Asustados, ArbolReves, CloseDoor}
 public enum SoundType {Laugh, SmokeBomb, Clap00, Clap01, Boo00, Boo01, Act01Track, Act02Track, Act03Track, WolfScare, WolfBlow, PigYell, PigLaugh, House}
+public bool test;
